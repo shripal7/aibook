@@ -1,0 +1,53 @@
+{
+  "questions": [
+    {
+      "id": "rq-tax-q1",
+      "type": "mcq",
+      "prompt": "Moving into a higher tax bracket means:",
+      "choices": [
+        "All your income is taxed at the higher rate",
+        "Only income within that bracket is taxed at the higher rate",
+        "You pay no tax below it",
+        "Your effective rate equals your marginal rate"
+      ],
+      "answer_index": 1,
+      "model_answer": null,
+      "rationale": "Only the slice of income inside the higher bracket is taxed at that rate.",
+      "citation": {
+        "passage_id": "p-tax-b03-001",
+        "beat_index": 3
+      }
+    },
+    {
+      "id": "rq-tax-q2",
+      "type": "mcq",
+      "prompt": "Which usually saves more, dollar-for-dollar?",
+      "choices": [
+        "A deduction",
+        "A credit",
+        "They are identical",
+        "Neither reduces tax"
+      ],
+      "answer_index": 1,
+      "model_answer": null,
+      "rationale": "A credit reduces tax directly; a deduction only reduces taxable income.",
+      "citation": {
+        "passage_id": "p-tax-b04-001",
+        "beat_index": 4
+      }
+    },
+    {
+      "id": "rq-tax-q3",
+      "type": "short",
+      "prompt": "In one line, when is a capital gain typically taxed?",
+      "choices": [],
+      "answer_index": null,
+      "model_answer": "When the asset is sold (the gain is 'realised').",
+      "rationale": "Most systems tax gains on realisation, not while unrealised.",
+      "citation": {
+        "passage_id": "p-tax-b05-001",
+        "beat_index": 5
+      }
+    }
+  ]
+}

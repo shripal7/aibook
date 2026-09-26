@@ -1,0 +1,94 @@
+{
+  "beats": [
+    {
+      "index": 1,
+      "title": "Start here \u2014 disclaimer",
+      "narration": "aiBook is an AI-generated educational digest \u2014 not financial, legal, or tax advice. It may be simplified, out of date, or wrong. Always verify with a qualified professional before making any decision. This is general information about Indian law for learning, not legal advice; laws change and facts matter \u2014 consult a qualified advocate.",
+      "citations": [
+        {
+          "passage_id": "p-inlaw-b01-001",
+          "beat_index": 1,
+          "quote": "Not legal advice \u2014 consult a qualified advocate for your situation.",
+          "quote_token_len": 10,
+          "full_passage_text": "aiBook is an AI-generated educational digest \u2014 not financial, legal, or tax advice. It may be simplified, out of date, or wrong. Always verify with a qualified professional before making any decision. This is general information about Indian law for learning, not legal advice. Laws are amended and outcomes depend on specific facts; always consult a qualified advocate."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 2,
+      "title": "The Constitution",
+      "narration": "The Constitution of India is the supreme law, adopted in 1950. It sets up the structure of government, distributes powers, and guarantees rights. Ordinary laws must conform to it.",
+      "citations": [
+        {
+          "passage_id": "p-inlaw-b02-001",
+          "beat_index": 2,
+          "quote": "The Constitution is the supreme law; other laws must conform to it.",
+          "quote_token_len": 12,
+          "full_passage_text": "Adopted on 26 January 1950, the Constitution establishes India as a sovereign, socialist, secular, democratic republic, defines the union and states, and is the yardstick against which other laws are tested."
+        }
+      ],
+      "auto_visual_scene_id": "vis-inlaw-b02"
+    },
+    {
+      "index": 3,
+      "title": "Fundamental Rights",
+      "narration": "Part III guarantees Fundamental Rights \u2014 such as equality, freedom of speech, and life and personal liberty \u2014 enforceable against the State. They are not absolute and carry reasonable restrictions.",
+      "citations": [
+        {
+          "passage_id": "p-inlaw-b03-001",
+          "beat_index": 3,
+          "quote": "Fundamental Rights are enforceable but subject to reasonable restrictions.",
+          "quote_token_len": 9,
+          "full_passage_text": "Part III lists rights like equality (Art. 14), the freedoms (Art. 19), and protection of life and personal liberty (Art. 21). Citizens can approach the courts to enforce them, though most are subject to reasonable, defined limits."
+        }
+      ],
+      "auto_visual_scene_id": "vis-inlaw-b03"
+    },
+    {
+      "index": 4,
+      "title": "The court system",
+      "narration": "India has an integrated judiciary: the Supreme Court at the apex, High Courts in the states, and subordinate district courts below. Higher courts can review decisions of lower ones.",
+      "citations": [
+        {
+          "passage_id": "p-inlaw-b04-001",
+          "beat_index": 4,
+          "quote": "One integrated pyramid: Supreme Court, High Courts, then district courts.",
+          "quote_token_len": 10,
+          "full_passage_text": "Unlike some federations, India has a single, integrated court system. The Supreme Court sits at the top, each state (or group) has a High Court, and district and subordinate courts handle most trials; appeals move upward."
+        }
+      ],
+      "auto_visual_scene_id": "vis-inlaw-b04"
+    },
+    {
+      "index": 5,
+      "title": "Civil vs criminal law",
+      "narration": "Civil law resolves private disputes (contracts, property, family) and usually ends in remedies like compensation. Criminal law addresses offences against society; in 2024 the new Bharatiya Nyaya Sanhita replaced the old Indian Penal Code.",
+      "citations": [
+        {
+          "passage_id": "p-inlaw-b05-001",
+          "beat_index": 5,
+          "quote": "Civil law compensates; criminal law punishes offences against society.",
+          "quote_token_len": 9,
+          "full_passage_text": "A civil case is typically between private parties seeking a remedy such as damages or an injunction. A criminal case is prosecuted by the State and can lead to punishment. India's core criminal statutes were recodified in 2023\u201324 (e.g., the Bharatiya Nyaya Sanhita)."
+        }
+      ],
+      "auto_visual_scene_id": "vis-inlaw-b05"
+    },
+    {
+      "index": 6,
+      "title": "Contracts basics",
+      "narration": "The Indian Contract Act, 1872 governs agreements. A valid contract generally needs offer and acceptance, lawful consideration, free consent, capacity, and a lawful object.",
+      "citations": [
+        {
+          "passage_id": "p-inlaw-b06-001",
+          "beat_index": 6,
+          "quote": "A valid contract needs offer, acceptance, consideration, consent, capacity, and lawful object.",
+          "quote_token_len": 12,
+          "full_passage_text": "Under the Indian Contract Act, 1872, an agreement becomes an enforceable contract when there is a lawful offer and acceptance, consideration, free consent of parties competent to contract, and a lawful object. Missing an essential can make it void or voidable."
+        }
+      ],
+      "auto_visual_scene_id": "vis-inlaw-b06"
+    }
+  ]
+}

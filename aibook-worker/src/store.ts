@@ -41,6 +41,30 @@ import aiePersonas from "./data/ai-engineering/personas.json";
 import aieOpportunities from "./data/ai-engineering/opportunities.json";
 import aieSeed from "./data/ai-engineering/audit_seed.json";
 
+import econBeats from "./data/econ-basics/beats.json";
+import econChatQa from "./data/econ-basics/chat_qa.json";
+import econVisuals from "./data/econ-basics/visuals.json";
+import econBible from "./data/econ-basics/visual_bible.json";
+import econQuiz from "./data/econ-basics/recap_quiz.json";
+import econPersonas from "./data/econ-basics/personas.json";
+import econSeed from "./data/econ-basics/audit_seed.json";
+
+import taxBeats from "./data/tax-basics/beats.json";
+import taxChatQa from "./data/tax-basics/chat_qa.json";
+import taxVisuals from "./data/tax-basics/visuals.json";
+import taxBible from "./data/tax-basics/visual_bible.json";
+import taxQuiz from "./data/tax-basics/recap_quiz.json";
+import taxPersonas from "./data/tax-basics/personas.json";
+import taxSeed from "./data/tax-basics/audit_seed.json";
+
+import lawBeats from "./data/indian-law/beats.json";
+import lawChatQa from "./data/indian-law/chat_qa.json";
+import lawVisuals from "./data/indian-law/visuals.json";
+import lawBible from "./data/indian-law/visual_bible.json";
+import lawQuiz from "./data/indian-law/recap_quiz.json";
+import lawPersonas from "./data/indian-law/personas.json";
+import lawSeed from "./data/indian-law/audit_seed.json";
+
 export const SNIPPET_TOKEN_CAP = 60;
 export const WORKERS_AI_MODEL = "@cf/meta/llama-3.1-8b-instruct-fp8";
 
@@ -90,6 +114,36 @@ const TITLE_DATA: Record<string, TitleData> = {
     personas: (aiePersonas as { personas: PersonaConfig[] }).personas,
     opportunities: aieOpportunities as unknown as OpportunitiesData,
     audit_seed: seed(aieSeed as { entries: AuditEntry[] }),
+  },
+  "econ-basics": {
+    beats: (econBeats as { beats: Beat[] }).beats,
+    chat_qa: econChatQa as unknown as ChatQAData,
+    visuals: (econVisuals as { scenes: VisualScene[] }).scenes,
+    visual_bible: econBible as unknown as VisualBible,
+    recap_quiz: econQuiz as unknown as RecapQuizData,
+    personas: (econPersonas as { personas: PersonaConfig[] }).personas,
+    opportunities: null,
+    audit_seed: seed(econSeed as { entries: AuditEntry[] }),
+  },
+  "tax-basics": {
+    beats: (taxBeats as { beats: Beat[] }).beats,
+    chat_qa: taxChatQa as unknown as ChatQAData,
+    visuals: (taxVisuals as { scenes: VisualScene[] }).scenes,
+    visual_bible: taxBible as unknown as VisualBible,
+    recap_quiz: taxQuiz as unknown as RecapQuizData,
+    personas: (taxPersonas as { personas: PersonaConfig[] }).personas,
+    opportunities: null,
+    audit_seed: seed(taxSeed as { entries: AuditEntry[] }),
+  },
+  "indian-law": {
+    beats: (lawBeats as { beats: Beat[] }).beats,
+    chat_qa: lawChatQa as unknown as ChatQAData,
+    visuals: (lawVisuals as { scenes: VisualScene[] }).scenes,
+    visual_bible: lawBible as unknown as VisualBible,
+    recap_quiz: lawQuiz as unknown as RecapQuizData,
+    personas: (lawPersonas as { personas: PersonaConfig[] }).personas,
+    opportunities: null,
+    audit_seed: seed(lawSeed as { entries: AuditEntry[] }),
   },
 };
 

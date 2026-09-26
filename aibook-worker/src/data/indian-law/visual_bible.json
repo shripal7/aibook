@@ -1,0 +1,29 @@
+{
+  "title_id": "indian-law",
+  "style": {
+    "medium": "clean civic illustration",
+    "palette": [
+      "#14183c",
+      "#282c6e",
+      "#96a0f0"
+    ],
+    "palette_swatch": "/media/indian-law/bible/palette.png"
+  },
+  "characters": [
+    {
+      "id": "bib-scales",
+      "name": "Scales of justice",
+      "reference_image": "/media/indian-law/bible/scales.png",
+      "descriptors": [
+        "balanced scales motif"
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "id": "bib-court",
+      "name": "Courtroom",
+      "reference_image": "/media/indian-law/bible/court.png"
+    }
+  ]
+}

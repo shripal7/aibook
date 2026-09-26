@@ -51,6 +51,16 @@ struct CatalogView: View {
             .navigationDestination(for: Title.self) { title in
                 ReaderView(titleId: title.id)
             }
+            .safeAreaInset(edge: .bottom) {
+                Text("For education only — not financial, legal, or tax advice. AI can be wrong; verify with a qualified professional before making any decision.")
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 8)
+                    .frame(maxWidth: .infinity)
+                    .background(.bar)
+            }
         }
         .task {
             if vm.titles.isEmpty { await vm.load() }

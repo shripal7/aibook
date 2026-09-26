@@ -1,0 +1,105 @@
+{
+  "qa": [
+    {
+      "id": "qa-tax-marginal",
+      "match_keywords": [
+        "bracket",
+        "marginal",
+        "effective",
+        "rate",
+        "progressive"
+      ],
+      "question_canonical": "Does a higher bracket tax all my income?",
+      "answer": "No. In a bracketed system only the income within a bracket is taxed at that bracket's rate. Your marginal rate applies to your last unit of income; your effective rate is the average \u2014 and this is general info, not tax advice.",
+      "citations": [
+        {
+          "passage_id": "p-tax-b03-001",
+          "beat_index": 3,
+          "quote": "A higher bracket taxes only the income within that bracket \u2014 not all of it.",
+          "quote_token_len": 14,
+          "full_passage_text": "In a bracketed system, moving into a higher bracket does not tax your whole income at the higher rate \u2014 only the portion inside that bracket. That is why the marginal rate (on the last unit) is higher than the effective (average) rate."
+        }
+      ],
+      "supporting_layer": [],
+      "min_beat_index": 3,
+      "spoiler_gated": true
+    },
+    {
+      "id": "qa-tax-dedcred",
+      "match_keywords": [
+        "deduction",
+        "credit",
+        "difference",
+        "reduce"
+      ],
+      "question_canonical": "What's the difference between a deduction and a credit?",
+      "answer": "A deduction lowers the income that gets taxed; a credit lowers the tax itself. A credit of a given amount is usually worth more than a same-sized deduction.",
+      "citations": [
+        {
+          "passage_id": "p-tax-b04-001",
+          "beat_index": 4,
+          "quote": "Deductions shrink taxable income; credits shrink the tax you owe.",
+          "quote_token_len": 10,
+          "full_passage_text": "Because a deduction only removes income before the rate is applied, its value depends on your rate. A credit subtracts directly from tax owed, so a $100 credit typically saves more than a $100 deduction."
+        }
+      ],
+      "supporting_layer": [],
+      "min_beat_index": 4,
+      "spoiler_gated": true
+    },
+    {
+      "id": "qa-tax-capgain",
+      "match_keywords": [
+        "capital",
+        "gain",
+        "gains",
+        "asset",
+        "sell",
+        "profit"
+      ],
+      "question_canonical": "What is a capital gain?",
+      "answer": "It's the profit from selling an asset for more than you paid, usually taxed when you sell. Rates and rules for short- vs long-term gains vary by country \u2014 verify locally.",
+      "citations": [
+        {
+          "passage_id": "p-tax-b05-001",
+          "beat_index": 5,
+          "quote": "A capital gain is the profit when you sell an asset for more than its cost.",
+          "quote_token_len": 16,
+          "full_passage_text": "Gains are usually taxed when 'realised' (on sale), not while unrealised. Holding periods, asset types, and local rules (rates, exemptions, indexation, carry-forward of losses) vary widely \u2014 check your jurisdiction."
+        }
+      ],
+      "supporting_layer": [],
+      "min_beat_index": 5,
+      "spoiler_gated": true
+    },
+    {
+      "id": "qa-tax-file",
+      "match_keywords": [
+        "file",
+        "filing",
+        "return",
+        "records",
+        "deadline",
+        "penalty"
+      ],
+      "question_canonical": "Why file a return and keep records?",
+      "answer": "A return reconciles what you owe against what you've paid; organised records and meeting deadlines help you avoid penalties. For your situation, consult a tax professional.",
+      "citations": [
+        {
+          "passage_id": "p-tax-b06-001",
+          "beat_index": 6,
+          "quote": "Keep records and meet deadlines \u2014 it prevents most avoidable penalties.",
+          "quote_token_len": 10,
+          "full_passage_text": "A tax return reconciles what you owe with what you've already paid (through withholding or advance tax). Good record-keeping, correct forms, and on-time filing reduce errors and penalties; when unsure, get professional help."
+        }
+      ],
+      "supporting_layer": [],
+      "min_beat_index": 6,
+      "spoiler_gated": true
+    }
+  ],
+  "fallback": {
+    "answer": "I can share general tax concepts from what you've read \u2014 this is education, not tax advice, and rules vary by country and year. Ask about brackets, deductions vs credits, capital gains, or filing.",
+    "citations": []
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "questions": [
+    {
+      "id": "rq-econ-q1",
+      "type": "mcq",
+      "prompt": "Opportunity cost is best described as:",
+      "choices": [
+        "The money you spent",
+        "The next best alternative you gave up",
+        "The cheapest option",
+        "A type of tax"
+      ],
+      "answer_index": 1,
+      "model_answer": null,
+      "rationale": "Opportunity cost is the value of the best alternative forgone, not the cash outlay.",
+      "citation": {
+        "passage_id": "p-econ-b02-001",
+        "beat_index": 2
+      }
+    },
+    {
+      "id": "rq-econ-q2",
+      "type": "mcq",
+      "prompt": "If demand rises and supply is unchanged, price usually:",
+      "choices": [
+        "Falls",
+        "Stays exactly the same",
+        "Rises",
+        "Becomes zero"
+      ],
+      "answer_index": 2,
+      "model_answer": null,
+      "rationale": "More demand against the same supply pushes the equilibrium price up.",
+      "citation": {
+        "passage_id": "p-econ-b03-001",
+        "beat_index": 3
+      }
+    },
+    {
+      "id": "rq-econ-q3",
+      "type": "short",
+      "prompt": "In one line, what does inflation do to the purchasing power of money?",
+      "choices": [],
+      "answer_index": null,
+      "model_answer": "It reduces it \u2014 each unit of money buys less over time.",
+      "rationale": "Inflation is a sustained rise in the general price level, lowering purchasing power.",
+      "citation": {
+        "passage_id": "p-econ-b05-001",
+        "beat_index": 5
+      }
+    }
+  ]
+}

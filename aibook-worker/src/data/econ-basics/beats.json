@@ -1,0 +1,94 @@
+{
+  "beats": [
+    {
+      "index": 1,
+      "title": "Start here \u2014 disclaimer",
+      "narration": "aiBook is an AI-generated educational digest \u2014 not financial, legal, or tax advice. It may be simplified, out of date, or wrong. Always verify with a qualified professional before making any decision.",
+      "citations": [
+        {
+          "passage_id": "p-econ-b01-001",
+          "beat_index": 1,
+          "quote": "Not financial advice; verify before you decide.",
+          "quote_token_len": 7,
+          "full_passage_text": "aiBook is an AI-generated educational digest \u2014 not financial, legal, or tax advice. It may be simplified, out of date, or wrong. Always verify with a qualified professional before making any decision."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 2,
+      "title": "Scarcity and opportunity cost",
+      "narration": "Economics starts from scarcity: resources are limited but wants are not. Every choice has an opportunity cost \u2014 the value of the next best thing you gave up.",
+      "citations": [
+        {
+          "passage_id": "p-econ-b02-001",
+          "beat_index": 2,
+          "quote": "The cost of a choice is the best alternative you did not pick.",
+          "quote_token_len": 13,
+          "full_passage_text": "Scarcity means we cannot have everything at once, so choosing one thing means forgoing another. That forgone alternative \u2014 not the money spent \u2014 is the true 'opportunity cost' of a decision."
+        }
+      ],
+      "auto_visual_scene_id": "vis-econ-b02"
+    },
+    {
+      "index": 3,
+      "title": "Supply, demand, and price",
+      "narration": "Prices emerge where the quantity buyers want to buy meets the quantity sellers want to sell. When demand rises or supply falls, prices tend to rise, and vice versa.",
+      "citations": [
+        {
+          "passage_id": "p-econ-b03-001",
+          "beat_index": 3,
+          "quote": "Price is the signal that balances what people want with what is available.",
+          "quote_token_len": 13,
+          "full_passage_text": "In a competitive market, price adjusts until the amount demanded equals the amount supplied. Shifts in tastes, incomes, input costs, or the number of sellers move those curves and change the equilibrium price and quantity."
+        }
+      ],
+      "auto_visual_scene_id": "vis-econ-b03"
+    },
+    {
+      "index": 4,
+      "title": "Incentives matter",
+      "narration": "People respond to incentives \u2014 rewards and penalties change behaviour, sometimes in unintended ways. Good policy and good design anticipate how incentives will actually be used.",
+      "citations": [
+        {
+          "passage_id": "p-econ-b04-001",
+          "beat_index": 4,
+          "quote": "Change the incentives and you change the behaviour.",
+          "quote_token_len": 8,
+          "full_passage_text": "Because individuals weigh costs and benefits, even well-meaning rules can backfire when they reward the wrong thing. Analysing incentives is often the first step in understanding an economic outcome."
+        }
+      ],
+      "auto_visual_scene_id": "vis-econ-b04"
+    },
+    {
+      "index": 5,
+      "title": "Inflation and money",
+      "narration": "Inflation is a sustained rise in the general price level, which reduces the purchasing power of money over time. Moderate, stable inflation is common; very high or unpredictable inflation is disruptive.",
+      "citations": [
+        {
+          "passage_id": "p-econ-b05-001",
+          "beat_index": 5,
+          "quote": "Inflation means each unit of money buys a little less than before.",
+          "quote_token_len": 12,
+          "full_passage_text": "When the overall level of prices rises, the same amount of money buys fewer goods and services. Central banks typically aim for low, steady inflation; the causes and cures are debated and context-dependent."
+        }
+      ],
+      "auto_visual_scene_id": "vis-econ-b05"
+    },
+    {
+      "index": 6,
+      "title": "Comparative advantage and trade",
+      "narration": "Comparative advantage explains why trade can make both sides better off: each party specialises in what it gives up the least to produce, then trades for the rest.",
+      "citations": [
+        {
+          "passage_id": "p-econ-b06-001",
+          "beat_index": 6,
+          "quote": "Specialise where your opportunity cost is lowest, then trade.",
+          "quote_token_len": 9,
+          "full_passage_text": "Even if one party is better at everything, both can gain by specialising according to relative (not absolute) opportunity costs and exchanging. Real-world trade also involves distribution, transition costs, and policy choices."
+        }
+      ],
+      "auto_visual_scene_id": "vis-econ-b06"
+    }
+  ]
+}

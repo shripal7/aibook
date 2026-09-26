@@ -1,0 +1,62 @@
+{
+  "scenes": [
+    {
+      "id": "vis-econ-b02",
+      "passage_id": "p-econ-b02-001",
+      "beat_index": 2,
+      "image": "/media/econ-basics/scenes/scarcity.png",
+      "prompt_shown": "balance scale weighing two choices",
+      "conditioned_on": [
+        "bib-market",
+        "style"
+      ],
+      "caption": "AI-generated placeholder illustration for education."
+    },
+    {
+      "id": "vis-econ-b03",
+      "passage_id": "p-econ-b03-001",
+      "beat_index": 3,
+      "image": "/media/econ-basics/scenes/supply_demand.png",
+      "prompt_shown": "supply and demand curves crossing",
+      "conditioned_on": [
+        "bib-market",
+        "style"
+      ],
+      "caption": "AI-generated placeholder illustration for education."
+    },
+    {
+      "id": "vis-econ-b04",
+      "passage_id": "p-econ-b04-001",
+      "beat_index": 4,
+      "image": "/media/econ-basics/scenes/incentives.png",
+      "prompt_shown": "signpost with reward and penalty",
+      "conditioned_on": [
+        "style"
+      ],
+      "caption": "AI-generated placeholder illustration for education."
+    },
+    {
+      "id": "vis-econ-b05",
+      "passage_id": "p-econ-b05-001",
+      "beat_index": 5,
+      "image": "/media/econ-basics/scenes/inflation.png",
+      "prompt_shown": "rising price chart with coins",
+      "conditioned_on": [
+        "style"
+      ],
+      "caption": "AI-generated placeholder illustration for education."
+    },
+    {
+      "id": "vis-econ-b06",
+      "passage_id": "p-econ-b06-001",
+      "beat_index": 6,
+      "image": "/media/econ-basics/scenes/trade.png",
+      "prompt_shown": "two regions exchanging goods",
+      "conditioned_on": [
+        "bib-market",
+        "style"
+      ],
+      "caption": "AI-generated placeholder illustration for education."
+    }
+  ]
+}

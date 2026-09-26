@@ -11,11 +11,19 @@
       "rights": {
         "status": "public-domain",
         "source": "Project Gutenberg #20203",
-        "ai_derivative_rights": ["chat", "visuals", "agents", "quiz"],
+        "ai_derivative_rights": [
+          "chat",
+          "visuals",
+          "agents",
+          "quiz"
+        ],
         "vault_bytes": 386000
       },
       "reader_state": {
-        "beat_position": { "beat_index": 1, "label": "Beat 1" }
+        "beat_position": {
+          "beat_index": 1,
+          "label": "Beat 1"
+        }
       }
     },
     {
@@ -74,11 +82,19 @@
       "rights": {
         "status": "original-work",
         "source": "aiBook original manuscript, first published 2026",
-        "ai_derivative_rights": ["chat", "visuals", "agents", "quiz"],
+        "ai_derivative_rights": [
+          "chat",
+          "visuals",
+          "agents",
+          "quiz"
+        ],
         "vault_bytes": 42000
       },
       "reader_state": {
-        "beat_position": { "beat_index": 1, "label": "Beat 1" }
+        "beat_position": {
+          "beat_index": 1,
+          "label": "Beat 1"
+        }
       }
     },
     {
@@ -92,11 +108,97 @@
       "rights": {
         "status": "study-companion",
         "source": "Original digest summarizing concepts from 'AI Engineering: Building Applications with Foundation Models' by Chip Huyen (O'Reilly, 2025). Not affiliated with or endorsed by the author or publisher; contains no verbatim text from the book.",
-        "ai_derivative_rights": ["chat", "visuals", "agents", "quiz"],
+        "ai_derivative_rights": [
+          "chat",
+          "visuals",
+          "agents",
+          "quiz"
+        ],
         "vault_bytes": 0
       },
       "reader_state": {
-        "beat_position": { "beat_index": 1, "label": "Beat 1" }
+        "beat_position": {
+          "beat_index": 1,
+          "label": "Beat 1"
+        }
+      }
+    },
+    {
+      "id": "econ-basics",
+      "title": "Economics in One Sitting",
+      "author": "aiBook Editorial (original work)",
+      "year": 2026,
+      "cover": "/media/econ-basics/bible/cover.png",
+      "locked": false,
+      "category": "reference",
+      "rights": {
+        "status": "original-work",
+        "source": "aiBook original explainer, first published 2026",
+        "ai_derivative_rights": [
+          "chat",
+          "visuals",
+          "agents",
+          "quiz"
+        ],
+        "vault_bytes": 38000
+      },
+      "reader_state": {
+        "beat_position": {
+          "beat_index": 1,
+          "label": "Beat 1"
+        }
+      }
+    },
+    {
+      "id": "tax-basics",
+      "title": "Understanding Taxes",
+      "author": "aiBook Editorial (original work)",
+      "year": 2026,
+      "cover": "/media/tax-basics/bible/cover.png",
+      "locked": false,
+      "category": "reference",
+      "rights": {
+        "status": "original-work",
+        "source": "aiBook original explainer, first published 2026",
+        "ai_derivative_rights": [
+          "chat",
+          "visuals",
+          "agents",
+          "quiz"
+        ],
+        "vault_bytes": 36000
+      },
+      "reader_state": {
+        "beat_position": {
+          "beat_index": 1,
+          "label": "Beat 1"
+        }
+      }
+    },
+    {
+      "id": "indian-law",
+      "title": "Foundations of Indian Law",
+      "author": "aiBook Editorial (original work)",
+      "year": 2026,
+      "cover": "/media/indian-law/bible/cover.png",
+      "locked": false,
+      "category": "reference",
+      "rights": {
+        "status": "original-work",
+        "source": "aiBook original explainer, first published 2026",
+        "ai_derivative_rights": [
+          "chat",
+          "visuals",
+          "agents",
+          "quiz"
+        ],
+        "vault_bytes": 40000
+      },
+      "reader_state": {
+        "beat_position": {
+          "beat_index": 1,
+          "label": "Beat 1"
+        }
       }
     }
   ]

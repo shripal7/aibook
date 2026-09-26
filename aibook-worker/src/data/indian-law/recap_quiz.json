@@ -1,0 +1,53 @@
+{
+  "questions": [
+    {
+      "id": "rq-inlaw-q1",
+      "type": "mcq",
+      "prompt": "The supreme law of India is:",
+      "choices": [
+        "The Indian Penal Code",
+        "The Constitution",
+        "The Contract Act",
+        "A Supreme Court judgment"
+      ],
+      "answer_index": 1,
+      "model_answer": null,
+      "rationale": "The Constitution is supreme; other laws must conform to it.",
+      "citation": {
+        "passage_id": "p-inlaw-b02-001",
+        "beat_index": 2
+      }
+    },
+    {
+      "id": "rq-inlaw-q2",
+      "type": "mcq",
+      "prompt": "At the apex of India's judiciary is the:",
+      "choices": [
+        "High Court",
+        "District Court",
+        "Supreme Court",
+        "Tribunal"
+      ],
+      "answer_index": 2,
+      "model_answer": null,
+      "rationale": "The Supreme Court sits at the top of the integrated judiciary.",
+      "citation": {
+        "passage_id": "p-inlaw-b04-001",
+        "beat_index": 4
+      }
+    },
+    {
+      "id": "rq-inlaw-q3",
+      "type": "short",
+      "prompt": "Name two essentials of a valid contract under the 1872 Act.",
+      "choices": [],
+      "answer_index": null,
+      "model_answer": "Any two of: offer & acceptance, lawful consideration, free consent, capacity, lawful object.",
+      "rationale": "These are the core ingredients of an enforceable contract.",
+      "citation": {
+        "passage_id": "p-inlaw-b06-001",
+        "beat_index": 6
+      }
+    }
+  ]
+}

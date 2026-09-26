@@ -1,0 +1,132 @@
+{
+  "qa": [
+    {
+      "id": "qa-inlaw-const",
+      "match_keywords": [
+        "constitution",
+        "supreme",
+        "law",
+        "1950"
+      ],
+      "question_canonical": "What is the Constitution's role?",
+      "answer": "It is India's supreme law (adopted 1950): it sets up government, distributes powers, and guarantees rights, and ordinary laws must conform to it. This is general info, not legal advice.",
+      "citations": [
+        {
+          "passage_id": "p-inlaw-b02-001",
+          "beat_index": 2,
+          "quote": "The Constitution is the supreme law; other laws must conform to it.",
+          "quote_token_len": 12,
+          "full_passage_text": "Adopted on 26 January 1950, the Constitution establishes India as a sovereign, socialist, secular, democratic republic, defines the union and states, and is the yardstick against which other laws are tested."
+        }
+      ],
+      "supporting_layer": [],
+      "min_beat_index": 2,
+      "spoiler_gated": true
+    },
+    {
+      "id": "qa-inlaw-rights",
+      "match_keywords": [
+        "fundamental",
+        "rights",
+        "equality",
+        "speech",
+        "liberty",
+        "article"
+      ],
+      "question_canonical": "What are Fundamental Rights?",
+      "answer": "They are Part III guarantees \u2014 like equality, freedom of speech, and life and personal liberty \u2014 enforceable against the State but subject to reasonable restrictions.",
+      "citations": [
+        {
+          "passage_id": "p-inlaw-b03-001",
+          "beat_index": 3,
+          "quote": "Fundamental Rights are enforceable but subject to reasonable restrictions.",
+          "quote_token_len": 9,
+          "full_passage_text": "Part III lists rights like equality (Art. 14), the freedoms (Art. 19), and protection of life and personal liberty (Art. 21). Citizens can approach the courts to enforce them, though most are subject to reasonable, defined limits."
+        }
+      ],
+      "supporting_layer": [],
+      "min_beat_index": 3,
+      "spoiler_gated": true
+    },
+    {
+      "id": "qa-inlaw-courts",
+      "match_keywords": [
+        "court",
+        "courts",
+        "supreme",
+        "high",
+        "judiciary",
+        "hierarchy"
+      ],
+      "question_canonical": "How is the judiciary structured?",
+      "answer": "It's an integrated pyramid: the Supreme Court at the apex, High Courts in the states, and district/subordinate courts below, with appeals moving upward.",
+      "citations": [
+        {
+          "passage_id": "p-inlaw-b04-001",
+          "beat_index": 4,
+          "quote": "One integrated pyramid: Supreme Court, High Courts, then district courts.",
+          "quote_token_len": 10,
+          "full_passage_text": "Unlike some federations, India has a single, integrated court system. The Supreme Court sits at the top, each state (or group) has a High Court, and district and subordinate courts handle most trials; appeals move upward."
+        }
+      ],
+      "supporting_layer": [],
+      "min_beat_index": 4,
+      "spoiler_gated": true
+    },
+    {
+      "id": "qa-inlaw-civcrim",
+      "match_keywords": [
+        "civil",
+        "criminal",
+        "difference",
+        "bns",
+        "penal",
+        "offence",
+        "offense"
+      ],
+      "question_canonical": "How do civil and criminal law differ?",
+      "answer": "Civil law settles private disputes with remedies like compensation; criminal law punishes offences against society and is prosecuted by the State. India recodified its criminal laws in 2023\u201324. Consult an advocate for specifics.",
+      "citations": [
+        {
+          "passage_id": "p-inlaw-b05-001",
+          "beat_index": 5,
+          "quote": "Civil law compensates; criminal law punishes offences against society.",
+          "quote_token_len": 9,
+          "full_passage_text": "A civil case is typically between private parties seeking a remedy such as damages or an injunction. A criminal case is prosecuted by the State and can lead to punishment. India's core criminal statutes were recodified in 2023\u201324 (e.g., the Bharatiya Nyaya Sanhita)."
+        }
+      ],
+      "supporting_layer": [],
+      "min_beat_index": 5,
+      "spoiler_gated": true
+    },
+    {
+      "id": "qa-inlaw-contract",
+      "match_keywords": [
+        "contract",
+        "agreement",
+        "offer",
+        "acceptance",
+        "consideration",
+        "1872"
+      ],
+      "question_canonical": "What makes a valid contract in India?",
+      "answer": "Under the Indian Contract Act, 1872: offer and acceptance, lawful consideration, free consent, capacity, and a lawful object. Missing an essential can make it void or voidable.",
+      "citations": [
+        {
+          "passage_id": "p-inlaw-b06-001",
+          "beat_index": 6,
+          "quote": "A valid contract needs offer, acceptance, consideration, consent, capacity, and lawful object.",
+          "quote_token_len": 12,
+          "full_passage_text": "Under the Indian Contract Act, 1872, an agreement becomes an enforceable contract when there is a lawful offer and acceptance, consideration, free consent of parties competent to contract, and a lawful object. Missing an essential can make it void or voidable."
+        }
+      ],
+      "supporting_layer": [],
+      "min_beat_index": 6,
+      "spoiler_gated": true
+    }
+  ],
+  "fallback": {
+    "answer": "I can explain general Indian-law concepts from what you've read \u2014 this is education, not legal advice, and specifics depend on facts and current law. Ask about the Constitution, Fundamental Rights, the courts, civil vs criminal law, or contracts.",
+    "citations": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title_id": "tax-basics",
+  "style": {
+    "medium": "clean infographic illustration",
+    "palette": [
+      "#3c2a0a",
+      "#785614",
+      "#f0c86e"
+    ],
+    "palette_swatch": "/media/tax-basics/bible/palette.png"
+  },
+  "characters": [
+    {
+      "id": "bib-form",
+      "name": "Tax form",
+      "reference_image": "/media/tax-basics/bible/form.png",
+      "descriptors": [
+        "stylised return document"
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "id": "bib-ledger",
+      "name": "Ledger",
+      "reference_image": "/media/tax-basics/bible/ledger.png"
+    }
+  ]
+}

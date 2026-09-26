@@ -1,0 +1,62 @@
+{
+  "scenes": [
+    {
+      "id": "vis-tax-b02",
+      "passage_id": "p-tax-b02-001",
+      "beat_index": 2,
+      "image": "/media/tax-basics/scenes/what_tax.png",
+      "prompt_shown": "public services funded by contributions",
+      "conditioned_on": [
+        "style"
+      ],
+      "caption": "AI-generated placeholder illustration for education."
+    },
+    {
+      "id": "vis-tax-b03",
+      "passage_id": "p-tax-b03-001",
+      "beat_index": 3,
+      "image": "/media/tax-basics/scenes/brackets.png",
+      "prompt_shown": "stacked tax brackets diagram",
+      "conditioned_on": [
+        "bib-form",
+        "style"
+      ],
+      "caption": "AI-generated placeholder illustration for education."
+    },
+    {
+      "id": "vis-tax-b04",
+      "passage_id": "p-tax-b04-001",
+      "beat_index": 4,
+      "image": "/media/tax-basics/scenes/deduct_credit.png",
+      "prompt_shown": "two paths reducing a tax bill",
+      "conditioned_on": [
+        "bib-form",
+        "style"
+      ],
+      "caption": "AI-generated placeholder illustration for education."
+    },
+    {
+      "id": "vis-tax-b05",
+      "passage_id": "p-tax-b05-001",
+      "beat_index": 5,
+      "image": "/media/tax-basics/scenes/capital_gains.png",
+      "prompt_shown": "asset bought low sold high",
+      "conditioned_on": [
+        "style"
+      ],
+      "caption": "AI-generated placeholder illustration for education."
+    },
+    {
+      "id": "vis-tax-b06",
+      "passage_id": "p-tax-b06-001",
+      "beat_index": 6,
+      "image": "/media/tax-basics/scenes/filing.png",
+      "prompt_shown": "organised folder of receipts",
+      "conditioned_on": [
+        "bib-ledger",
+        "style"
+      ],
+      "caption": "AI-generated placeholder illustration for education."
+    }
+  ]
+}

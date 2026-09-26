@@ -1,0 +1,29 @@
+{
+  "title_id": "econ-basics",
+  "style": {
+    "medium": "clean infographic illustration",
+    "palette": [
+      "#0e2e20",
+      "#12563c",
+      "#78dcaa"
+    ],
+    "palette_swatch": "/media/econ-basics/bible/palette.png"
+  },
+  "characters": [
+    {
+      "id": "bib-market",
+      "name": "The market",
+      "reference_image": "/media/econ-basics/bible/market.png",
+      "descriptors": [
+        "stylised supply and demand curves"
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "id": "bib-econ-desk",
+      "name": "Study desk",
+      "reference_image": "/media/econ-basics/bible/desk.png"
+    }
+  ]
+}

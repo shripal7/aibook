@@ -1,0 +1,94 @@
+{
+  "beats": [
+    {
+      "index": 1,
+      "title": "Start here \u2014 disclaimer",
+      "narration": "aiBook is an AI-generated educational digest \u2014 not financial, legal, or tax advice. It may be simplified, out of date, or wrong. Always verify with a qualified professional before making any decision. Tax rules vary by country and year and change often; this is general education only.",
+      "citations": [
+        {
+          "passage_id": "p-tax-b01-001",
+          "beat_index": 1,
+          "quote": "Not tax advice; rules vary by country and year \u2014 verify with a professional.",
+          "quote_token_len": 13,
+          "full_passage_text": "aiBook is an AI-generated educational digest \u2014 not financial, legal, or tax advice. It may be simplified, out of date, or wrong. Always verify with a qualified professional before making any decision. Tax rules vary by country and year and change often; this is general education only. Consult a qualified tax professional or your tax authority for your situation."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 2,
+      "title": "What a tax is",
+      "narration": "A tax is a compulsory payment to a government used to fund public services like roads, schools, defence, and administration. Taxes can be on income, consumption, property, or wealth.",
+      "citations": [
+        {
+          "passage_id": "p-tax-b02-001",
+          "beat_index": 2,
+          "quote": "A tax is a compulsory contribution that funds shared public services.",
+          "quote_token_len": 11,
+          "full_passage_text": "Governments levy taxes to raise revenue and, sometimes, to influence behaviour. Common bases include income, spending (sales/VAT/GST), property, and capital gains; the exact system differs by jurisdiction."
+        }
+      ],
+      "auto_visual_scene_id": "vis-tax-b02"
+    },
+    {
+      "index": 3,
+      "title": "Income tax and brackets",
+      "narration": "Many income taxes are progressive and use brackets: higher slices of income are taxed at higher rates. Your marginal rate applies to the last rupee earned; your effective rate is the average across all income.",
+      "citations": [
+        {
+          "passage_id": "p-tax-b03-001",
+          "beat_index": 3,
+          "quote": "A higher bracket taxes only the income within that bracket \u2014 not all of it.",
+          "quote_token_len": 14,
+          "full_passage_text": "In a bracketed system, moving into a higher bracket does not tax your whole income at the higher rate \u2014 only the portion inside that bracket. That is why the marginal rate (on the last unit) is higher than the effective (average) rate."
+        }
+      ],
+      "auto_visual_scene_id": "vis-tax-b03"
+    },
+    {
+      "index": 4,
+      "title": "Deductions vs credits",
+      "narration": "A deduction reduces the income that is taxed; a credit reduces the tax itself. A credit of a given amount is usually worth more than a deduction of the same amount.",
+      "citations": [
+        {
+          "passage_id": "p-tax-b04-001",
+          "beat_index": 4,
+          "quote": "Deductions shrink taxable income; credits shrink the tax you owe.",
+          "quote_token_len": 10,
+          "full_passage_text": "Because a deduction only removes income before the rate is applied, its value depends on your rate. A credit subtracts directly from tax owed, so a $100 credit typically saves more than a $100 deduction."
+        }
+      ],
+      "auto_visual_scene_id": "vis-tax-b04"
+    },
+    {
+      "index": 5,
+      "title": "Capital gains basics",
+      "narration": "A capital gain is the profit from selling an asset for more than you paid. Many systems tax short-term and long-term gains differently, and some offer exemptions or indexation.",
+      "citations": [
+        {
+          "passage_id": "p-tax-b05-001",
+          "beat_index": 5,
+          "quote": "A capital gain is the profit when you sell an asset for more than its cost.",
+          "quote_token_len": 16,
+          "full_passage_text": "Gains are usually taxed when 'realised' (on sale), not while unrealised. Holding periods, asset types, and local rules (rates, exemptions, indexation, carry-forward of losses) vary widely \u2014 check your jurisdiction."
+        }
+      ],
+      "auto_visual_scene_id": "vis-tax-b05"
+    },
+    {
+      "index": 6,
+      "title": "Filing and records",
+      "narration": "Most taxpayers file a periodic return summarising income, deductions, and tax paid. Keeping organised records and meeting deadlines helps avoid penalties.",
+      "citations": [
+        {
+          "passage_id": "p-tax-b06-001",
+          "beat_index": 6,
+          "quote": "Keep records and meet deadlines \u2014 it prevents most avoidable penalties.",
+          "quote_token_len": 10,
+          "full_passage_text": "A tax return reconciles what you owe with what you've already paid (through withholding or advance tax). Good record-keeping, correct forms, and on-time filing reduce errors and penalties; when unsure, get professional help."
+        }
+      ],
+      "auto_visual_scene_id": "vis-tax-b06"
+    }
+  ]
+}

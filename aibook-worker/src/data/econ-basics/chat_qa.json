@@ -1,0 +1,105 @@
+{
+  "qa": [
+    {
+      "id": "qa-econ-opp",
+      "match_keywords": [
+        "opportunity",
+        "cost",
+        "tradeoff",
+        "forgo",
+        "alternative"
+      ],
+      "question_canonical": "What is opportunity cost?",
+      "answer": "Opportunity cost is the value of the next best alternative you give up when you make a choice \u2014 not the money spent, but what you could have done instead.",
+      "citations": [
+        {
+          "passage_id": "p-econ-b02-001",
+          "beat_index": 2,
+          "quote": "The cost of a choice is the best alternative you did not pick.",
+          "quote_token_len": 13,
+          "full_passage_text": "Scarcity means we cannot have everything at once, so choosing one thing means forgoing another. That forgone alternative \u2014 not the money spent \u2014 is the true 'opportunity cost' of a decision."
+        }
+      ],
+      "supporting_layer": [],
+      "min_beat_index": 2,
+      "spoiler_gated": true
+    },
+    {
+      "id": "qa-econ-price",
+      "match_keywords": [
+        "price",
+        "supply",
+        "demand",
+        "equilibrium",
+        "shortage"
+      ],
+      "question_canonical": "What sets a market price?",
+      "answer": "In a competitive market, price moves to where the quantity demanded equals the quantity supplied. Shifts in demand or supply change that equilibrium price.",
+      "citations": [
+        {
+          "passage_id": "p-econ-b03-001",
+          "beat_index": 3,
+          "quote": "Price is the signal that balances what people want with what is available.",
+          "quote_token_len": 13,
+          "full_passage_text": "In a competitive market, price adjusts until the amount demanded equals the amount supplied. Shifts in tastes, incomes, input costs, or the number of sellers move those curves and change the equilibrium price and quantity."
+        }
+      ],
+      "supporting_layer": [],
+      "min_beat_index": 3,
+      "spoiler_gated": true
+    },
+    {
+      "id": "qa-econ-inflation",
+      "match_keywords": [
+        "inflation",
+        "prices",
+        "purchasing",
+        "money",
+        "cost",
+        "living"
+      ],
+      "question_canonical": "What is inflation?",
+      "answer": "Inflation is a sustained rise in the general price level, so money loses purchasing power over time. Central banks usually target low, steady inflation.",
+      "citations": [
+        {
+          "passage_id": "p-econ-b05-001",
+          "beat_index": 5,
+          "quote": "Inflation means each unit of money buys a little less than before.",
+          "quote_token_len": 12,
+          "full_passage_text": "When the overall level of prices rises, the same amount of money buys fewer goods and services. Central banks typically aim for low, steady inflation; the causes and cures are debated and context-dependent."
+        }
+      ],
+      "supporting_layer": [],
+      "min_beat_index": 5,
+      "spoiler_gated": true
+    },
+    {
+      "id": "qa-econ-trade",
+      "match_keywords": [
+        "comparative",
+        "advantage",
+        "trade",
+        "specialise",
+        "specialize"
+      ],
+      "question_canonical": "Why does trade help both sides?",
+      "answer": "Because of comparative advantage: each side specialises where its opportunity cost is lowest and trades for the rest, so both can end up with more.",
+      "citations": [
+        {
+          "passage_id": "p-econ-b06-001",
+          "beat_index": 6,
+          "quote": "Specialise where your opportunity cost is lowest, then trade.",
+          "quote_token_len": 9,
+          "full_passage_text": "Even if one party is better at everything, both can gain by specialising according to relative (not absolute) opportunity costs and exchanging. Real-world trade also involves distribution, transition costs, and policy choices."
+        }
+      ],
+      "supporting_layer": [],
+      "min_beat_index": 6,
+      "spoiler_gated": true
+    }
+  ],
+  "fallback": {
+    "answer": "I can only explain general economics from what you've read so far \u2014 and remember, this is education, not financial advice. Try rephrasing, or ask about scarcity, prices, incentives, inflation, or trade.",
+    "citations": []
+  }
+}
