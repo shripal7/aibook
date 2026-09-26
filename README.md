@@ -46,7 +46,7 @@ Captured live from the Android app running against the deployed Worker.
 feed, visualize, and all four live agent personas (historian, debate-the-author, translate to
 Spanish & Hindi, and quiz coach). Also on the [v1.0 release](https://github.com/shripal7/aibook/releases/tag/v1.0).
 
-This repo has two parts:
+This repo has three parts: a backend and two native clients (Android + iOS).
 
 ## `aibook-worker/` — API backend (Cloudflare Worker)
 TypeScript Worker (Hono) that serves the JSON API and book media from one origin. Book
@@ -80,6 +80,19 @@ Set `AIBOOK_API_BASE_URL` in `aibook-android/gradle.properties` to your deployed
 > Release signing is optional and local-only: drop an `aibook-android/keystore.properties`
 > (with `storeFile`, `storePassword`, `keyAlias`, `keyPassword`) next to a keystore to
 > produce a signed release build. Both are git-ignored.
+
+## `aibook-ios/` — native iOS app (Swift + SwiftUI)
+Full-parity iOS client: catalog, auto-advancing beats feed with citations + spoiler gate,
+visualize, live agent personas, recap quiz, and the RPG receipts drawer. SwiftUI +
+async/await + `URLSession`, MVVM (`@MainActor ObservableObject`).
+
+```bash
+cd aibook-ios
+open aiBook.xcodeproj    # requires full Xcode 15+; pick a Simulator and Run
+```
+Backend URL is in `aibook-ios/aiBook/Sources/Config.swift` (defaults to the live Worker, so it
+runs with nothing else). The `.xcodeproj` is committed; regenerate with `xcodegen generate` if
+you change the file list.
 
 ## Architecture note
 The Worker is stateless: the RPG audit entry is returned with each chat/visualize/agent

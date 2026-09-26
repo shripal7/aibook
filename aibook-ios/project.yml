@@ -1,0 +1,30 @@
+name: aiBook
+options:
+  bundleIdPrefix: dev.aibook
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+targets:
+  aiBook:
+    type: application
+    platform: iOS
+    sources:
+      - aiBook/Sources
+      - aiBook/Resources
+    info:
+      path: aiBook/Info.plist
+      properties:
+        CFBundleDisplayName: aiBook
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.aibook
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "5.0"
+        ENABLE_USER_SCRIPT_SANDBOXING: YES
