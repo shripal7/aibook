@@ -177,6 +177,6 @@ export interface AuditEntry {
 
 /** Cloudflare bindings from wrangler.toml. */
 export interface Env {
-  ASSETS: Fetcher;
+  CONTENT: KVNamespace;
   AI: Ai;
 }

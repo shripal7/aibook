@@ -1,9 +1,13 @@
 # aiBook API — Cloudflare Worker
 
 A TypeScript Cloudflare Worker that reproduces the aiBook Flask API (`../backend`) 1:1 so the
-Android app (and, optionally, the static React site) have a real hosted base URL. All book data
-is canned JSON bundled into the Worker; agent personas run on **Workers AI** with a canned
-fallback; images are served as **Static Assets**.
+mobile apps have a real hosted base URL. **All content — title metadata, per-book data, and
+media — is read from a KV namespace (`CONTENT`) at request time**, so adding, editing, or
+removing a book is just writing KV keys with **no redeploy** (see [ADDING-A-BOOK.md](ADDING-A-BOOK.md)).
+Agent personas run on **Workers AI** with a canned fallback.
+
+`src/data/` and `public/media/` are the human-editable source of truth; `scripts/upload-content.py`
+pushes them into KV. Deploy the Worker only when you change its **code**.
 
 ## Endpoints (identical to the Flask contract)
 

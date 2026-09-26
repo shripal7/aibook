@@ -1,18 +1,14 @@
-// Live agent personas — port of backend/agents.py, RPG-honest.
-//
-// Ollama is replaced by Cloudflare Workers AI. The system prompt is still assembled only
-// from the derived layer (beat narration + citation quotes), never raw text, so the audit
-// guarantee holds. On any AI error we fall back to persona.fallback_line, mirroring the
-// call_ollama None-on-error contract. The "opportunity" persona serves the canned snapshot.
+// Live agent personas — Workers AI with a canned fallback, RPG-honest. The system prompt is
+// assembled only from the derived layer (beat narration + citation quotes), never raw text.
 
-import { SNIPPET_TOKEN_CAP, WORKERS_AI_MODEL, store, type TitleData } from "./store";
+import { SNIPPET_TOKEN_CAP, WORKERS_AI_MODEL, beatOf, personaOf, type BookData } from "./store";
 import { buildAuditEntry } from "./rpg";
-import type { AuditEntry, ContextPackage, Env, PersonaConfig } from "./types";
+import type { AuditEntry, ContextPackage, Env } from "./types";
 
 export const OPPORTUNITY_PERSONA_ID = "opportunity";
 
-export function buildAgentContext(titleId: string, beatIndex: number): string {
-  const beat = store.beat(titleId, beatIndex);
+export function buildAgentContext(book: BookData, beatIndex: number): string {
+  const beat = beatOf(book, beatIndex);
   if (!beat) return "";
   const citationLines = beat.citations.map((c) => `- ${c.quote}`).join("\n");
   return (
@@ -22,11 +18,7 @@ export function buildAgentContext(titleId: string, beatIndex: number): string {
   );
 }
 
-async function callWorkersAi(
-  env: Env,
-  systemPrompt: string,
-  userMessage: string,
-): Promise<string | null> {
+async function callWorkersAi(env: Env, systemPrompt: string, userMessage: string): Promise<string | null> {
   try {
     const result = (await env.AI.run(WORKERS_AI_MODEL, {
       messages: [
@@ -42,20 +34,6 @@ async function callWorkersAi(
   }
 }
 
-function fetchOpportunities(data: TitleData, persona: PersonaConfig): [string, string] {
-  // No live search on Workers — always serve the curated snapshot (or fallback line).
-  if (data.opportunities === null) {
-    return [persona.fallback_line, "fallback"];
-  }
-  const lines = data.opportunities.items.map(
-    (item) => `- ${item.title} (${item.org}): ${item.note} — ${item.link}`,
-  );
-  const reply =
-    `(live search unavailable — showing curated list as of ${data.opportunities.as_of})\n` +
-    lines.join("\n");
-  return [reply, "fallback_snapshot"];
-}
-
 export interface AgentResult {
   response: string;
   persona: string;
@@ -65,16 +43,15 @@ export interface AgentResult {
 
 export async function sendAgentMessage(
   env: Env,
-  titleId: string,
-  data: TitleData,
+  book: BookData,
   agentType: string,
   beatIndex: number,
   message: string,
 ): Promise<AgentResult | null> {
-  const persona = store.persona(titleId, agentType);
+  const persona = personaOf(book, agentType);
   if (!persona) return null;
 
-  const context = buildAgentContext(titleId, beatIndex);
+  const context = buildAgentContext(book, beatIndex);
   const systemPrompt = `${persona.system_prompt}\n\nContext:\n${context}`;
 
   let reply: string;
@@ -82,7 +59,18 @@ export async function sendAgentMessage(
   let contextBytes: number;
 
   if (agentType === OPPORTUNITY_PERSONA_ID) {
-    [reply, status] = fetchOpportunities(data, persona);
+    if (book.opportunities === null) {
+      reply = persona.fallback_line;
+      status = "fallback";
+    } else {
+      const lines = book.opportunities.items.map(
+        (item) => `- ${item.title} (${item.org}): ${item.note} — ${item.link}`,
+      );
+      reply =
+        `(live search unavailable — showing curated list as of ${book.opportunities.as_of})\n` +
+        lines.join("\n");
+      status = "fallback_snapshot";
+    }
     contextBytes = 0;
   } else {
     const rawReply = await callWorkersAi(env, systemPrompt, message);
@@ -91,7 +79,7 @@ export async function sendAgentMessage(
     contextBytes = new TextEncoder().encode(systemPrompt).length;
   }
 
-  const beat = store.beat(titleId, beatIndex);
+  const beat = beatOf(book, beatIndex);
   const passagesRetrieved = beat ? beat.citations.map((c) => c.passage_id) : [];
   const contextPackage: ContextPackage = {
     summaries_used: [],
@@ -100,7 +88,7 @@ export async function sendAgentMessage(
     snippet_tokens_sent: 0,
     snippet_cap: SNIPPET_TOKEN_CAP,
   };
-  const audit = buildAuditEntry(titleId, `agent:${agentType}`, message, beatIndex, contextPackage, false, {
+  const audit = buildAuditEntry(book.vault_bytes, `agent:${agentType}`, message, beatIndex, contextPackage, false, {
     contextBytesSentToModel: contextBytes,
     agentCallStatus: status,
   });
