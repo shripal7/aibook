@@ -42,9 +42,46 @@ Captured live from the Android app running against the deployed Worker.
   </tr>
 </table>
 
-**▶ Full walkthrough video:** [`docs/aiBook-personas.mp4`](docs/aiBook-personas.mp4) — reading
-feed, visualize, and all four live agent personas (historian, debate-the-author, translate to
-Spanish & Hindi, and quiz coach). Also on the [v1.0 release](https://github.com/shripal7/aibook/releases/tag/v1.0).
+**▶ Full walkthrough video (Android):** [`docs/aiBook-personas.mp4`](docs/aiBook-personas.mp4) —
+reading feed, visualize, and all four live agent personas (historian, debate-the-author, translate
+to Spanish & Hindi, and quiz coach). Also on the [v1.0 release](https://github.com/shripal7/aibook/releases/tag/v1.0).
+
+### iOS (SwiftUI)
+
+Same experience, native on iOS — captured from the iOS Simulator against the live Worker.
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="docs/ios-screenshots/01-catalog.png" width="230"><br>
+      <sub><b>Library</b></sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="docs/ios-screenshots/03-visualize.png" width="230"><br>
+      <sub><b>Visualize</b> — Visual Bible</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="docs/ios-screenshots/04-historian.png" width="230"><br>
+      <sub><b>Historian</b> — live persona</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%">
+      <img src="docs/ios-screenshots/05-debate-author.png" width="230"><br>
+      <sub><b>Debate the author</b></sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="docs/ios-screenshots/06-translate-hindi.png" width="230"><br>
+      <sub><b>Translate</b> — Hindi</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="docs/ios-screenshots/02-reading-feed.png" width="230"><br>
+      <sub><b>Beats feed</b></sub>
+    </td>
+  </tr>
+</table>
+
+**▶ iOS walkthrough video:** [`docs/aiBook-ios-personas.mp4`](docs/aiBook-ios-personas.mp4).
 
 This repo has three parts: a backend and two native clients (Android + iOS).
 

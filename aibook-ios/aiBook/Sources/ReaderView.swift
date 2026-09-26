@@ -145,6 +145,7 @@ struct ReaderView: View {
                     .textFieldStyle(.roundedBorder)
                     .lineLimit(1...4)
                     .disabled(vm.sending)
+                    .accessibilityIdentifier("composer")
                 Button {
                     vm.send(input)
                     input = ""
@@ -152,6 +153,7 @@ struct ReaderView: View {
                     Image(systemName: "paperplane.fill")
                 }
                 .disabled(input.trimmingCharacters(in: .whitespaces).isEmpty || vm.sending)
+                .accessibilityLabel("Send")
             }
         }
         .padding(.horizontal)

@@ -13,12 +13,23 @@
 		36245F56ED4F77581800107E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8B0660006B1E4F54D0CE6D /* Config.swift */; };
 		41BA2D85CEDC69B1FAA9B066 /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47BF7D63446D75ABD76B571 /* ReaderView.swift */; };
 		4FB19283FD5FEBF9E69F06D5 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE203ADA7A21697F0A9E2E /* Components.swift */; };
+		6CB047CBC2B7A13DE8566AB1 /* DemoUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5B9D1A866C7C41D52C2149 /* DemoUITest.swift */; };
 		70FDF71C385F5014F08D0B0F /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDB3C398F6E02E76D95E8E3 /* CatalogView.swift */; };
 		ACC4164C5BF6A0011947D51F /* ReaderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C7FD48CB09B7719C4650E4 /* ReaderModels.swift */; };
 		ADC18EF51421188F40C2C14C /* aiBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629A66C5CE4F982D4B140E51 /* aiBookApp.swift */; };
 		C52DB544F2170DB8887FDDB5 /* RecapQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E532E6D19E24EEE45AC34A /* RecapQuizView.swift */; };
 		E5BBD22D284C676747FED572 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A05A393305E815CDC318AB /* Models.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98A963793A5A23A04DF9A57D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91EA1E2CFCCAD473BA0BB6F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 407F5A2574ECE855B01842B6;
+			remoteInfo = aiBook;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		16D5D00ADE39B5D1DE0AFE96 /* aiBook.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = aiBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,10 +40,12 @@
 		7CDB3C398F6E02E76D95E8E3 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
 		81E532E6D19E24EEE45AC34A /* RecapQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapQuizView.swift; sourceTree = "<group>"; };
 		90A05A393305E815CDC318AB /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A4913E38AB0AE92CF0976FAB /* aiBookUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = aiBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8B0660006B1E4F54D0CE6D /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		E2DAE89A259415E0AEB9AC6F /* RpgAuditSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RpgAuditSheetView.swift; sourceTree = "<group>"; };
 		E47BF7D63446D75ABD76B571 /* ReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
 		F08B03C58EE306A14D221288 /* ReaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewModel.swift; sourceTree = "<group>"; };
+		FC5B9D1A866C7C41D52C2149 /* DemoUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -40,8 +53,17 @@
 			isa = PBXGroup;
 			children = (
 				16D5D00ADE39B5D1DE0AFE96 /* aiBook.app */,
+				A4913E38AB0AE92CF0976FAB /* aiBookUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4B8AF0BBFE897599590C2245 /* aiBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC5B9D1A866C7C41D52C2149 /* DemoUITest.swift */,
+			);
+			path = aiBookUITests;
 			sourceTree = "<group>";
 		};
 		826BBF830BA97D0C74091896 /* Sources */ = {
@@ -82,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				D45BCADE8BFB0C3F836B1FDF /* aiBook */,
+				4B8AF0BBFE897599590C2245 /* aiBookUITests */,
 				248830FF1DC2F3BAB8368CB3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,6 +129,24 @@
 			productReference = 16D5D00ADE39B5D1DE0AFE96 /* aiBook.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E1FF7712BA2A80D5943ECDE4 /* aiBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90DCD8AC879A3C1574B2840 /* Build configuration list for PBXNativeTarget "aiBookUITests" */;
+			buildPhases = (
+				6D1DB98E11303963709C30AF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD9B05D96697B1218321F13D /* PBXTargetDependency */,
+			);
+			name = aiBookUITests;
+			packageProductDependencies = (
+			);
+			productName = aiBookUITests;
+			productReference = A4913E38AB0AE92CF0976FAB /* aiBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -115,6 +156,9 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					E1FF7712BA2A80D5943ECDE4 = {
+						TestTargetID = 407F5A2574ECE855B01842B6;
+					};
 				};
 			};
 			buildConfigurationList = 5035AE69B5807C7280FB81E4 /* Build configuration list for PBXProject "aiBook" */;
@@ -132,11 +176,20 @@
 			projectRoot = "";
 			targets = (
 				407F5A2574ECE855B01842B6 /* aiBook */,
+				E1FF7712BA2A80D5943ECDE4 /* aiBookUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6D1DB98E11303963709C30AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB047CBC2B7A13DE8566AB1 /* DemoUITest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A154FF705D5CD28CE1F72553 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -156,6 +209,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD9B05D96697B1218321F13D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 407F5A2574ECE855B01842B6 /* aiBook */;
+			targetProxy = 98A963793A5A23A04DF9A57D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1007B51CC8E06FB27B16DF3B /* Release */ = {
@@ -177,6 +238,42 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
+		};
+		3F3D345FEBB0A4242D85ADA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.aibook.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = aiBook;
+			};
+			name = Release;
+		};
+		4C0DE74AE75CFC99A893E78D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.aibook.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = aiBook;
+			};
+			name = Debug;
 		};
 		5B2ACB2052AD8458593C1E47 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -334,6 +431,15 @@
 			buildConfigurations = (
 				838D6B4903BDFCC4587D05C8 /* Debug */,
 				5B2ACB2052AD8458593C1E47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A90DCD8AC879A3C1574B2840 /* Build configuration list for PBXNativeTarget "aiBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C0DE74AE75CFC99A893E78D /* Debug */,
+				3F3D345FEBB0A4242D85ADA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

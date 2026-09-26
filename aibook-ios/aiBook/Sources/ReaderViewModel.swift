@@ -32,7 +32,13 @@ final class ReaderViewModel: ObservableObject {
 
     private let autoAdvanceSeconds: UInt64 = 4
 
-    init(titleId: String) { self.titleId = titleId }
+    init(titleId: String) {
+        self.titleId = titleId
+        // UI tests pass this so the walkthrough can drive personas on a stable beat.
+        if ProcessInfo.processInfo.arguments.contains("-uitestNoAutoAdvance") {
+            autoAdvance = false
+        }
+    }
 
     var finished: Bool { !beats.isEmpty && revealedCount >= beats.count }
 

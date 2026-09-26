@@ -28,3 +28,26 @@ targets:
         TARGETED_DEVICE_FAMILY: "1,2"
         SWIFT_VERSION: "5.0"
         ENABLE_USER_SCRIPT_SANDBOXING: YES
+  aiBookUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - aiBookUITests
+    dependencies:
+      - target: aiBook
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.aibook.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "5.0"
+schemes:
+  aiBook:
+    build:
+      targets:
+        aiBook: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - aiBookUITests
