@@ -1,0 +1,48 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "What did young Franklin buy when he first arrived in Philadelphia?",
+      "choices": ["A loaf of rye bread", "Three puffy rolls", "A pint of ale", "Nothing -- he had no money"],
+      "answer_index": 1,
+      "rationale": "\"He gave me accordingly three great Puffy Rolls . . . walk'd off with a Roll under each Arm.\"",
+      "citation": { "passage_id": "p-b03-001", "beat_index": 3 }
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "prompt": "What did Franklin call the club he formed for mutual improvement?",
+      "choices": ["The Society", "The Junto", "The Academy", "The Assembly"],
+      "answer_index": 1,
+      "rationale": "\"I had form'd most of my ingenious Acquaintance into a Club for mutual Improvement, which we called the Junto.\"",
+      "citation": { "passage_id": "p-b04-001", "beat_index": 4 }
+    },
+    {
+      "id": "q3",
+      "type": "short",
+      "prompt": "In one sentence, what was Franklin's 'Project' described in his most famous self-improvement passage?",
+      "model_answer": "His attempt to achieve moral perfection by systematically practicing thirteen named virtues.",
+      "rationale": "\"It was about this time I conceiv'd the bold and arduous Project of arriving at moral Perfection.\"",
+      "citation": { "passage_id": "p-b07-001", "beat_index": 7 }
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "prompt": "What honor did Franklin's electrical experiments earn him?",
+      "choices": ["A knighthood", "Election to the Royal Society and the Copley Medal", "A seat in Parliament", "The Nobel Prize"],
+      "answer_index": 1,
+      "rationale": "\"[The discoveries] gain'd me the Honour of being chosen a Member of the Royal Society . . . a handsome Gold Medal was voted to me.\"",
+      "citation": { "passage_id": "p-b08-001", "beat_index": 8 }
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "prompt": "According to Poor Richard's Almanack, what does rising early make a person?",
+      "choices": ["Tired and cranky", "Healthy, wealthy, and wise", "Rich but unhappy", "Late for church"],
+      "answer_index": 1,
+      "rationale": "\"Early to Bed, and early to rise, makes a Man healthy, wealthy, and wise.\"",
+      "citation": { "passage_id": "p-b05-001", "beat_index": 5 }
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "qa": [
+    {
+      "id": "qa-h001",
+      "match_keywords": ["harness", "hands", "exist", "why"],
+      "question_canonical": "Why does a harness exist?",
+      "answer": "Because a language model alone can only produce text -- every capability people call 'agentic', like reading a file or remembering yesterday's decision, has to be built around it by something else: the harness.",
+      "citations": [
+        {
+          "passage_id": "p-hb01-001",
+          "beat_index": 1,
+          "quote": "A model is a mind with no hands until something gives it hands.",
+          "quote_token_len": 13,
+          "full_passage_text": "People ask what makes an assistant an agent, as if the model gained some new instinct. It didn't. What changed is everything wrapped around it: a loop that hands it a task, a shell it can run commands in, a way to remember what happened five minutes or five days ago. A model is a mind with no hands until something gives it hands. The harness is the hands, and everything that follows is really the story of how those hands got built, one clumsy attempt at a time."
+        }
+      ],
+      "supporting_layer": [],
+      "min_beat_index": 1,
+      "spoiler_gated": false
+    },
+    {
+      "id": "qa-h002",
+      "match_keywords": ["tool", "loop", "observe", "act"],
+      "question_canonical": "What is the tool-use loop?",
+      "answer": "It's the core mechanism of any agent: show the model the situation, let it decide whether to act, run whatever tool it asks for, and hand back the result, repeating until it says it's done.",
+      "citations": [
+        {
+          "passage_id": "p-hb02-001",
+          "beat_index": 2,
+          "quote": "Every real capability the model has is a tool it was handed, described in words, and trusted to ask for by name.",
+          "quote_token_len": 22,
+          "full_passage_text": "Strip away the marketing and an agent is a loop: show the model the situation, let it decide whether to act, run whatever it asks for, and hand back what happened. Repeat until it says it's done. Every real capability the model has -- reading a file, searching the web, editing a line of code -- is a tool it was handed, described in words, and trusted to ask for by name. The loop is unglamorous. It is also the entire trick."
+        }
+      ],
+      "supporting_layer": ["ev-tool-loop"],
+      "min_beat_index": 2,
+      "spoiler_gated": false
+    },
+    {
+      "id": "qa-h003",
+      "match_keywords": ["context", "window", "memory", "desk"],
+      "question_canonical": "Why is context described as finite?",
+      "answer": "Because nothing stays in view forever -- a context window is compared to a desk that gets cluttered, so long sessions summarize and move older material into 'drawers' the model can reopen on request.",
+      "citations": [
+        {
+          "passage_id": "p-hb03-001",
+          "beat_index": 3,
+          "quote": "A context window is not a memory; it is a desk, and desks get cluttered.",
+          "quote_token_len": 16,
+          "full_passage_text": "The first hard lesson was that nothing stays in view forever. A context window is not a memory; it is a desk, and desks get cluttered. Long sessions had to learn to summarize what came before, compress it, and set the rest aside -- not deleted, just moved off the desk into a drawer the model could reopen on request. Memory, it turned out, meant building drawers, not building a bigger desk."
+        }
+      ],
+      "supporting_layer": ["ev-context-drawers", "c-context-management"],
+      "min_beat_index": 3,
+      "spoiler_gated": false
+    },
+    {
+      "id": "qa-h004",
+      "match_keywords": ["skill", "skills", "package", "expertise"],
+      "question_canonical": "What is a skill in this book's sense?",
+      "answer": "A skill is packaged, rare, or team-specific expertise stored as a short instruction file the harness loads only when the situation calls for it, rather than something trained into the model.",
+      "citations": [
+        {
+          "passage_id": "p-hb04-001",
+          "beat_index": 4,
+          "quote": "A skill is expertise the model didn't have to be trained on -- it just had to be told where to look.",
+          "quote_token_len": 21,
+          "full_passage_text": "Not every task deserves to live in the model's default instincts. Some are rare, some are specific to one team's way of doing things, some are simply too detailed to keep loaded at all times. The answer was to package that expertise separately -- a short file of instructions the harness could load only when the situation called for it. A skill is expertise the model didn't have to be trained on -- it just had to be told where to look. The model got sharper not by knowing more, but by knowing when to go look something up."
+        }
+      ],
+      "supporting_layer": ["ev-skills-packaging"],
+      "min_beat_index": 4,
+      "spoiler_gated": false
+    },
+    {
+      "id": "qa-h005",
+      "match_keywords": ["subagent", "delegate", "fork", "clone"],
+      "question_canonical": "What problem do subagents solve?",
+      "answer": "They let the harness delegate wide exploration or long searches to a separate worker with its own clean context, so the main conversation doesn't get cluttered with intermediate work.",
+      "citations": [
+        {
+          "passage_id": "p-hb05-001",
+          "beat_index": 5,
+          "quote": "Delegation meant giving a piece of the problem to a version of yourself that would not remember trying.",
+          "quote_token_len": 18,
+          "full_passage_text": "Some tasks flood the desk before they're even half done -- a wide search, a long exploration, a question whose answer takes ten thousand words to find and one sentence to report. For those, the harness learned to spin off a separate worker: a subagent, with its own clean desk, sent to fetch an answer and nothing else. Delegation meant giving a piece of the problem to a version of yourself that would not remember trying, so the version that mattered could stay uncluttered."
+        }
+      ],
+      "supporting_layer": ["ev-subagent-delegation", "c-delegation"],
+      "min_beat_index": 5,
+      "spoiler_gated": true
+    },
+    {
+      "id": "qa-h006",
+      "match_keywords": ["permission", "safety", "blast", "radius"],
+      "question_canonical": "How does the harness decide what it's allowed to do?",
+      "answer": "Permissions aren't a single on/off switch -- they're a map of blast radius, allowing reversible actions freely and stopping irreversible ones at a gate, because the real risk is how far a single mistake could reach.",
+      "citations": [
+        {
+          "passage_id": "p-hb07-001",
+          "beat_index": 7,
+          "quote": "The question was never whether the model would eventually try something destructive; it was how far that single mistake would reach.",
+          "quote_token_len": 22,
+          "full_passage_text": "Trust arrived slowly, and only where it was cheap to be wrong. Reading a file, safe. Editing a file, mostly safe if it can be undone. Force-pushing to a shared branch, a different category of risk entirely. The question was never whether the model would eventually try something destructive; it was how far that single mistake would reach. So permissions stopped being a single on/off switch and became a map of blast radius -- reversible actions allowed freely, irreversible ones stopped at a gate."
+        }
+      ],
+      "supporting_layer": ["ev-permission-model", "c-safety-rails"],
+      "min_beat_index": 7,
+      "spoiler_gated": true
+    }
+  ],
+  "fallback": {
+    "answer": "I can only answer from this book's manuscript and from what you've read so far -- could you rephrase, or ask about a beat you've just read?",
+    "citations": []
+  }
+}

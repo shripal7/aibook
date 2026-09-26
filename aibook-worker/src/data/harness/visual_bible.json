@@ -1,0 +1,26 @@
+{
+  "title_id": "harness",
+  "style": {
+    "medium": "clean technical diagram illustration, blueprint schematic style",
+    "palette": ["#0d1b2a", "#1b263b", "#415a77", "#e0e1dd"],
+    "palette_swatch": "/media/harness/bible/palette.png"
+  },
+  "characters": [
+    {
+      "id": "bible-model",
+      "name": "The Model",
+      "reference_image": "/media/harness/bible/model.png",
+      "descriptors": ["abstract neural glow", "no hands", "centered node"]
+    },
+    {
+      "id": "bible-harness",
+      "name": "The Harness",
+      "reference_image": "/media/harness/bible/harness.png",
+      "descriptors": ["mechanical exoskeleton", "modular attachments", "blueprint linework"]
+    }
+  ],
+  "settings": [
+    { "id": "bible-sandbox", "name": "The sandbox", "reference_image": "/media/harness/scenes/sandbox.png" },
+    { "id": "bible-network", "name": "The outside network", "reference_image": "/media/harness/scenes/network.png" }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "qa": [
+    {
+      "id": "qa-001",
+      "match_keywords": ["run", "away", "philadelphia", "flee", "escape"],
+      "question_canonical": "Why did Franklin run away to Philadelphia?",
+      "answer": "Franklin fled a bitter, sometimes physically abusive falling-out with his brother and master, James, arriving in Philadelphia broke and unknown -- his famous walk down Market Street eating a bread roll marks the moment his old life ended.",
+      "citations": [
+        {
+          "passage_id": "p-b03-001",
+          "beat_index": 3,
+          "quote": "He gave me accordingly three great Puffy Rolls . . . walk'd off with a Roll under each Arm, and eating the other.",
+          "quote_token_len": 21,
+          "full_passage_text": "I ask'd for Bisket, meaning such as we had in Boston; that Sort, it seems, was not made in Philadelphia. I then ask'd for a threepenny Loaf, and was told they had none such. So not considering or knowing the Difference of Money, I bade him give me three penny worth of any sort. He gave me accordingly three great Puffy Rolls. I was surpriz'd at the Quantity, but took it, and, having no room in my Pockets, walk'd off with a Roll under each Arm, and eating the other."
+        }
+      ],
+      "supporting_layer": ["ev-rolls"],
+      "min_beat_index": 3,
+      "spoiler_gated": false
+    },
+    {
+      "id": "qa-002",
+      "match_keywords": ["junto", "club", "mutual", "improvement"],
+      "question_canonical": "What was the Junto?",
+      "answer": "The Junto was a club Franklin formed with his most capable friends for mutual improvement -- each meeting required a member to raise a question of morals, politics, or natural philosophy for the group to debate.",
+      "citations": [
+        {
+          "passage_id": "p-b04-001",
+          "beat_index": 4,
+          "quote": "I had form'd most of my ingenious Acquaintance into a Club for mutual Improvement, which we called the Junto.",
+          "quote_token_len": 17,
+          "full_passage_text": "I should have mention'd before, that, in the Autumn of the preceding Year, I had form'd most of my ingenious Acquaintance into a Club for mutual Improvement, which we called the Junto; we met on Friday Evenings. The Rules I drew up requir'd that every Member, in his Turn, should produce one or more Queries on any Point of Morals, Politics, or Natural Philosophy, to be discuss'd by the Company."
+        }
+      ],
+      "supporting_layer": ["ev-junto", "c-self-improvement"],
+      "min_beat_index": 4,
+      "spoiler_gated": false
+    },
+    {
+      "id": "qa-003",
+      "match_keywords": ["virtues", "perfection", "moral", "thirteen"],
+      "question_canonical": "What are the 13 virtues?",
+      "answer": "Franklin's project for 'moral perfection' was a list of thirteen named virtues -- including temperance, order, frugality, and industry -- which he tracked one at a time, week by week, in a small book, checking off any day he slipped.",
+      "citations": [
+        {
+          "passage_id": "p-b07-001",
+          "beat_index": 7,
+          "quote": "It was about this time I conceiv'd the bold and arduous Project of arriving at moral Perfection.",
+          "quote_token_len": 19,
+          "full_passage_text": "It was about this time I conceiv'd the bold and arduous Project of arriving at moral Perfection. I wish'd to live without committing any Fault at any time; I would conquer all that either Natural Inclination, Custom, or Company might lead me into. As I knew, or thought I knew, what was right and wrong, I did not see why I might not always do the one and avoid the other."
+        }
+      ],
+      "supporting_layer": ["ev-virtues", "c-self-improvement"],
+      "min_beat_index": 7,
+      "spoiler_gated": true
+    },
+    {
+      "id": "qa-004",
+      "match_keywords": ["famous", "fame", "reputation", "royal", "medal"],
+      "question_canonical": "Did Franklin become famous?",
+      "answer": "Yes -- his electrical experiments spread through the scientific world, earning him election to the Royal Society and its Copley Medal without his ever having applied for the honor.",
+      "citations": [
+        {
+          "passage_id": "p-b08-001",
+          "beat_index": 8,
+          "quote": "These Discoveries . . . gain'd me the Honour of being chosen a Member of the Royal Society.",
+          "quote_token_len": 18,
+          "full_passage_text": "The Publication of these Discoveries occasion'd me a good deal of Correspondence with several Learned Persons in Europe, and gain'd me the Honour of being chosen a Member of the Royal Society, and, without my having made any Application for it, a handsome Gold Medal was voted to me by that Society."
+        }
+      ],
+      "supporting_layer": ["ev-royal-society"],
+      "min_beat_index": 8,
+      "spoiler_gated": true
+    },
+    {
+      "id": "qa-005",
+      "match_keywords": ["civic", "institutions", "library", "hospital", "academy"],
+      "question_canonical": "What civic institutions did Franklin start?",
+      "answer": "Franklin founded the Library Company of Philadelphia -- which he calls the mother of all North American subscription libraries -- plus the Union Fire Company, a paving and street-lighting initiative, an academy that became the University of Pennsylvania, and the Pennsylvania Hospital.",
+      "citations": [
+        {
+          "passage_id": "p-b06-001",
+          "beat_index": 6,
+          "quote": "The Library . . . was the Mother of all the North American Subscription Libraries.",
+          "quote_token_len": 12,
+          "full_passage_text": "This Library afforded me the Means of Improvement by constant Study, for which I set apart an Hour or two each Day. The Library, though small, was the Mother of all the North American Subscription Libraries, now so numerous. It is a Common Benefit, and every Room in Philadelphia has since felt its Effects."
+        }
+      ],
+      "supporting_layer": ["c-civic-mindedness"],
+      "min_beat_index": 6,
+      "spoiler_gated": false
+    },
+    {
+      "id": "qa-006",
+      "match_keywords": ["almanack", "poor", "richard", "proverbs", "early"],
+      "question_canonical": "What does Poor Richard's Almanack say about waking up early?",
+      "answer": "Poor Richard's most famous proverb -- 'Early to Bed, and early to rise, makes a Man healthy, wealthy, and wise' -- captures the whole almanack's theme of industry and frugality as the road to prosperity.",
+      "citations": [
+        {
+          "passage_id": "p-b05-001",
+          "beat_index": 5,
+          "quote": "Early to Bed, and early to rise, makes a Man healthy, wealthy, and wise.",
+          "quote_token_len": 14,
+          "full_passage_text": "In 1732 I first publish'd my Almanack, under the Name of Richard Saunders; it was continu'd by me about 25 years, and came to be in such Demand that I reap'd considerable Profit from it. I fill'd all the little Spaces that occur'd between the Remarkable Days in the Calendar with Proverbial Sentences, chiefly such as inculcated Industry and Frugality, as the Means of procuring Wealth: 'Early to Bed, and early to rise, makes a Man healthy, wealthy, and wise.'"
+        }
+      ],
+      "supporting_layer": [],
+      "min_beat_index": 5,
+      "spoiler_gated": false
+    }
+  ],
+  "fallback": {
+    "answer": "I can only answer from Franklin's Autobiography and from what you've read so far -- could you rephrase, or ask about a person, event, or beat you've just read?",
+    "citations": []
+  }
+}

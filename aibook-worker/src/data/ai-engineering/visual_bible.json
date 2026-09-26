@@ -1,0 +1,26 @@
+{
+  "title_id": "ai-engineering",
+  "style": {
+    "medium": "clean modern technical illustration, flat vector diagrams, cool neutral palette",
+    "palette": ["#0b3d2e", "#1b7f5c", "#7fd1ae", "#eef4f1"],
+    "palette_swatch": "/media/ai-engineering/bible/palette.png"
+  },
+  "characters": [
+    {
+      "id": "bible-engineer",
+      "name": "The AI Engineer",
+      "reference_image": "/media/ai-engineering/bible/engineer.png",
+      "descriptors": ["at a laptop", "surrounded by pipelines and dashboards", "calm, methodical"]
+    },
+    {
+      "id": "bible-model",
+      "name": "The Foundation Model",
+      "reference_image": "/media/ai-engineering/bible/model.png",
+      "descriptors": ["large abstract network", "glowing core", "many input/output ports"]
+    }
+  ],
+  "settings": [
+    { "id": "bible-eval-lab", "name": "The evaluation lab", "reference_image": "/media/ai-engineering/scenes/eval_lab.png" },
+    { "id": "bible-pipeline", "name": "The data and serving pipeline", "reference_image": "/media/ai-engineering/scenes/pipeline.png" }
+  ]
+}

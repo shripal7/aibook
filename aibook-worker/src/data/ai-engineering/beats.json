@@ -1,0 +1,146 @@
+{
+  "beats": [
+    {
+      "index": 1,
+      "title": "What AI engineering is",
+      "narration": "This study companion opens by framing the discipline the book is named for: AI engineering is building applications on top of ready-made foundation models, rather than training models from scratch. Because powerful general-purpose models became available behind simple APIs, the center of gravity shifted from collecting data and training to adapting, evaluating, and integrating models into real products.",
+      "citations": [
+        {
+          "passage_id": "p-ae01-001",
+          "beat_index": 1,
+          "quote": "AI engineering starts where the model is already trained — the work is adapting it, not building it.",
+          "quote_token_len": 20,
+          "full_passage_text": "Study-companion summary (Ch. 1): The book distinguishes AI engineering from classic ML engineering. In the older workflow you gathered data and trained a model for one task; in AI engineering you begin with a capable foundation model and focus on adaptation — prompting, retrieval, finetuning — plus evaluation and product integration. This is a paraphrase of the chapter's framing, not the author's words."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 2,
+      "title": "Understanding foundation models",
+      "narration": "Before adapting a model you have to understand how it came to be: self-supervised pretraining over enormous text corpora, tokenization, and the sampling controls (like temperature and top-p) that shape every output. The book argues that knowing where a model's behavior comes from is what lets you predict and control what it will do in your application.",
+      "citations": [
+        {
+          "passage_id": "p-ae02-001",
+          "beat_index": 2,
+          "quote": "A foundation model's behavior is inherited from how it was trained and how you sample from it.",
+          "quote_token_len": 18,
+          "full_passage_text": "Study-companion summary (Ch. 2): The chapter covers how foundation models are pretrained on large corpora with a self-supervised objective, how text is tokenized, and how decoding parameters such as temperature and top-p turn the model's probability distribution into concrete outputs. Understanding these mechanics is presented as the basis for controlling model behavior. Paraphrased for study, not quoted."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 3,
+      "title": "Evaluation methodology",
+      "narration": "The companion's third beat reaches what the book treats as the hardest and most important skill: evaluation. Open-ended outputs resist simple scoring, so the chapter lays out a toolbox — exact and functional checks, similarity measures, and using a strong model as an AI judge — and makes the case for evaluation-driven development rather than shipping on vibes.",
+      "citations": [
+        {
+          "passage_id": "p-ae03-001",
+          "beat_index": 3,
+          "quote": "If you cannot measure an AI system's output, you cannot improve it on purpose.",
+          "quote_token_len": 16,
+          "full_passage_text": "Study-companion summary (Ch. 3): The book frames evaluation as the central challenge of AI engineering because generative outputs are open-ended and hard to score. It surveys approaches — exact-match and functional correctness, similarity metrics, and AI-as-a-judge — and argues for building evaluation in from the start. This is a paraphrase of the chapter's methodology discussion."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 4,
+      "title": "Evaluating your own application",
+      "narration": "General benchmarks tell you little about your specific product, so this beat moves from methodology to practice: defining the criteria that actually matter for your use case, assembling an evaluation set, wiring an eval pipeline into development, and adding guardrails that catch failures before users do.",
+      "citations": [
+        {
+          "passage_id": "p-ae04-001",
+          "beat_index": 4,
+          "quote": "Your application needs its own evaluation set, not just a leaderboard score.",
+          "quote_token_len": 15,
+          "full_passage_text": "Study-companion summary (Ch. 4): The chapter turns evaluation into an application-specific discipline — choosing criteria tied to the product's real goals, curating representative evaluation data, running evals continuously during development, and layering guardrails to catch bad outputs. Summarized in the companion's own words."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 5,
+      "title": "Prompt engineering",
+      "narration": "With evaluation in place, the book turns to the cheapest adaptation lever: the prompt. This beat covers in-context learning and zero/few-shot prompting, how prompt structure and system messages steer behavior, defending against prompt injection, and treating prompts as versioned artifacts you test rather than tweak blindly.",
+      "citations": [
+        {
+          "passage_id": "p-ae05-001",
+          "beat_index": 5,
+          "quote": "A prompt is a lever, and like any lever it should be measured, versioned, and defended.",
+          "quote_token_len": 18,
+          "full_passage_text": "Study-companion summary (Ch. 5): The chapter presents prompting as the first and cheapest way to adapt a model — in-context learning, few-shot examples, and system prompts — while warning about prompt injection and advocating that prompts be versioned and evaluated like code. Paraphrased for study purposes."
+        }
+      ],
+      "auto_visual_scene_id": "vis-ae05-prompt"
+    },
+    {
+      "index": 6,
+      "title": "RAG and agents",
+      "narration": "When prompting alone is not enough, the book reaches for two bigger patterns. Retrieval-augmented generation grounds the model in external data so answers stay current and specific; agents let the model plan, call tools, and act over multiple steps. This beat weighs their power against their failure modes — bad retrieval, brittle plans, compounding errors.",
+      "citations": [
+        {
+          "passage_id": "p-ae06-001",
+          "beat_index": 6,
+          "quote": "RAG gives the model the right context; agents give it the ability to act — both can fail loudly.",
+          "quote_token_len": 20,
+          "full_passage_text": "Study-companion summary (Ch. 6): The chapter covers retrieval-augmented generation — grounding a model in an external knowledge source and the importance of retrieval quality — and agentic patterns where the model plans and uses tools across steps. It also discusses their trade-offs and failure modes. Summarized, not quoted."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 7,
+      "title": "Finetuning",
+      "narration": "Sometimes adaptation has to reach into the weights. This beat follows the book's guidance on when finetuning beats prompting or retrieval, how parameter-efficient methods like LoRA make it affordable, and the sober cost-benefit question of whether the improvement is worth the data, compute, and maintenance it demands.",
+      "citations": [
+        {
+          "passage_id": "p-ae07-001",
+          "beat_index": 7,
+          "quote": "Finetune when prompting and retrieval have run out of room — and count the cost first.",
+          "quote_token_len": 18,
+          "full_passage_text": "Study-companion summary (Ch. 7): The chapter explains when finetuning is the right tool versus prompting or RAG, introduces parameter-efficient finetuning techniques such as LoRA to lower cost, and stresses weighing the gains against the data and operational burden. Paraphrased in the companion's own words."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 8,
+      "title": "Dataset engineering",
+      "narration": "Behind every good finetune and every good eval is data, and this beat covers the book's argument that data is the real differentiator. It summarizes curation, quality filtering, deduplication, and data synthesis — the unglamorous work of shaping a dataset that actually teaches the model what you want.",
+      "citations": [
+        {
+          "passage_id": "p-ae08-001",
+          "beat_index": 8,
+          "quote": "The dataset, not the model, is usually what makes one application better than another.",
+          "quote_token_len": 16,
+          "full_passage_text": "Study-companion summary (Ch. 8): The chapter treats dataset engineering as a core discipline — curating and quality-filtering data, deduplicating it, and synthesizing new data where needed — on the argument that data quality often decides application quality more than model choice. Summarized for study."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 9,
+      "title": "Inference, architecture, and feedback",
+      "narration": "The companion closes where products actually live: in production. Two final threads run here. First, inference optimization — making the model cheap and fast enough to serve with techniques like quantization, batching, and caching, trading accuracy, latency, cost, and throughput against each other. Second, the application architecture that wraps the model — routers, gateways, guardrails, and caches — and the user-feedback loops that turn real usage back into a signal for continuous improvement.",
+      "citations": [
+        {
+          "passage_id": "p-ae09-001",
+          "beat_index": 9,
+          "quote": "Serving is an optimization problem: latency, cost, and throughput pulled against each other.",
+          "quote_token_len": 16,
+          "full_passage_text": "Study-companion summary (Ch. 9, Inference Optimization): The chapter treats serving a foundation model as an engineering trade-off between latency, cost, and throughput, covering techniques such as quantization, batching, and caching, and how model- and service-level choices shape the economics of running an application. Paraphrased for study, not quoted."
+        },
+        {
+          "passage_id": "p-ae09-002",
+          "beat_index": 9,
+          "quote": "A production AI system is an architecture around the model — and a feedback loop that keeps improving it.",
+          "quote_token_len": 19,
+          "full_passage_text": "Study-companion summary (Ch. 10, Architecture & User Feedback): The final chapter assembles the full application around the model — routing, gateways, guardrails, and caching layers added step by step — and argues that collecting and acting on user feedback is what lets the system keep improving after launch. Summarized in the companion's own words."
+        }
+      ],
+      "auto_visual_scene_id": null
+    }
+  ]
+}

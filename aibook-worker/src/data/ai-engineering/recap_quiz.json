@@ -1,0 +1,48 @@
+{
+  "questions": [
+    {
+      "id": "aeq1",
+      "type": "mcq",
+      "prompt": "What is the central shift that defines AI engineering versus traditional ML engineering?",
+      "choices": ["Collecting more training data", "Adapting an existing foundation model instead of training one from scratch", "Writing lower-level CUDA kernels", "Replacing engineers with models"],
+      "answer_index": 1,
+      "rationale": "AI engineering starts from a capable foundation model and focuses on adaptation, evaluation, and integration rather than training from scratch.",
+      "citation": { "passage_id": "p-ae01-001", "beat_index": 1 }
+    },
+    {
+      "id": "aeq2",
+      "type": "mcq",
+      "prompt": "Which does the study companion call the hardest and most central skill of AI engineering?",
+      "choices": ["Prompt formatting", "Evaluation", "Choosing a GPU", "Picking a vector database"],
+      "answer_index": 1,
+      "rationale": "Open-ended outputs are hard to measure, so evaluation is framed as the central challenge, with evaluation-driven development as the answer.",
+      "citation": { "passage_id": "p-ae03-001", "beat_index": 3 }
+    },
+    {
+      "id": "aeq3",
+      "type": "short",
+      "prompt": "In one sentence, when should you finetune a model rather than prompt or use RAG?",
+      "model_answer": "When prompting and retrieval have run out of room and you need behavior the model won't reliably follow from instructions or context alone — after weighing the data and cost.",
+      "rationale": "Finetuning adapts the weights and is the right tool once cheaper adaptation levers are exhausted, provided the gain justifies the cost.",
+      "citation": { "passage_id": "p-ae07-001", "beat_index": 7 }
+    },
+    {
+      "id": "aeq4",
+      "type": "mcq",
+      "prompt": "What is the difference between RAG and an agent?",
+      "choices": ["RAG trains the model; agents evaluate it", "RAG grounds the model in retrieved context; agents let it plan and call tools across steps", "They are two names for the same thing", "RAG is only for images; agents are only for text"],
+      "answer_index": 1,
+      "rationale": "RAG supplies the right context via retrieval; agents add the ability to act over multiple steps using tools — each with its own failure modes.",
+      "citation": { "passage_id": "p-ae06-001", "beat_index": 6 }
+    },
+    {
+      "id": "aeq5",
+      "type": "mcq",
+      "prompt": "According to the companion, what most often differentiates one AI application's quality from another's?",
+      "choices": ["The programming language used", "The dataset", "The cloud provider", "The size of the team"],
+      "answer_index": 1,
+      "rationale": "Dataset engineering — curation, quality, deduplication, and synthesis — is presented as the real differentiator, often more than model choice.",
+      "citation": { "passage_id": "p-ae08-001", "beat_index": 8 }
+    }
+  ]
+}

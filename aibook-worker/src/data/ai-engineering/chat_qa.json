@@ -1,0 +1,152 @@
+{
+  "qa": [
+    {
+      "id": "qa-ae-001",
+      "match_keywords": ["ai engineering", "difference", "ml engineering", "traditional", "what is"],
+      "question_canonical": "How is AI engineering different from traditional ML engineering?",
+      "answer": "In traditional ML engineering you collect data and train a model for a specific task. AI engineering starts from a capable, already-trained foundation model and focuses on adapting it (prompting, retrieval, finetuning), evaluating it, and integrating it into a product. The center of gravity moves from training to adaptation and evaluation.",
+      "citations": [
+        {
+          "passage_id": "p-ae01-001",
+          "beat_index": 1,
+          "quote": "AI engineering starts where the model is already trained — the work is adapting it, not building it.",
+          "quote_token_len": 20,
+          "full_passage_text": "Study-companion summary (Ch. 1): The book distinguishes AI engineering from classic ML engineering. In the older workflow you gathered data and trained a model for one task; in AI engineering you begin with a capable foundation model and focus on adaptation — prompting, retrieval, finetuning — plus evaluation and product integration. This is a paraphrase of the chapter's framing, not the author's words."
+        }
+      ],
+      "supporting_layer": ["ev-adaptation"],
+      "min_beat_index": 1,
+      "spoiler_gated": false
+    },
+    {
+      "id": "qa-ae-002",
+      "match_keywords": ["sampling", "temperature", "top-p", "decoding", "tokenization"],
+      "question_canonical": "What controls a foundation model's output?",
+      "answer": "Two things: how it was trained (self-supervised pretraining over large corpora, which sets its knowledge and tendencies) and how you sample from it at generation time. Decoding controls like temperature and top-p turn the model's probability distribution into concrete text, trading off determinism against variety.",
+      "citations": [
+        {
+          "passage_id": "p-ae02-001",
+          "beat_index": 2,
+          "quote": "A foundation model's behavior is inherited from how it was trained and how you sample from it.",
+          "quote_token_len": 18,
+          "full_passage_text": "Study-companion summary (Ch. 2): The chapter covers how foundation models are pretrained on large corpora with a self-supervised objective, how text is tokenized, and how decoding parameters such as temperature and top-p turn the model's probability distribution into concrete outputs. Understanding these mechanics is presented as the basis for controlling model behavior. Paraphrased for study, not quoted."
+        }
+      ],
+      "supporting_layer": [],
+      "min_beat_index": 2,
+      "spoiler_gated": false
+    },
+    {
+      "id": "qa-ae-003",
+      "match_keywords": ["evaluation", "evaluate", "judge", "metrics", "hard"],
+      "question_canonical": "Why is evaluation considered so hard and so important?",
+      "answer": "Generative outputs are open-ended, so there's rarely a single correct answer to match against. The book surveys ways to cope — exact and functional correctness checks, similarity metrics, and using a strong model as an AI judge — and argues you should build evaluation in from the start rather than shipping on intuition.",
+      "citations": [
+        {
+          "passage_id": "p-ae03-001",
+          "beat_index": 3,
+          "quote": "If you cannot measure an AI system's output, you cannot improve it on purpose.",
+          "quote_token_len": 16,
+          "full_passage_text": "Study-companion summary (Ch. 3): The book frames evaluation as the central challenge of AI engineering because generative outputs are open-ended and hard to score. It surveys approaches — exact-match and functional correctness, similarity metrics, and AI-as-a-judge — and argues for building evaluation in from the start. This is a paraphrase of the chapter's methodology discussion."
+        }
+      ],
+      "supporting_layer": ["ev-eval-methodology", "c-evaluation-driven"],
+      "min_beat_index": 3,
+      "spoiler_gated": false
+    },
+    {
+      "id": "qa-ae-004",
+      "match_keywords": ["prompt", "prompting", "injection", "few-shot", "in-context"],
+      "question_canonical": "What does the book say about prompt engineering?",
+      "answer": "Prompting is the cheapest way to adapt a model: in-context learning, zero- and few-shot examples, and system prompts steer behavior without touching weights. The book also warns about prompt injection and recommends treating prompts as versioned, evaluated artifacts rather than ad-hoc tweaks.",
+      "citations": [
+        {
+          "passage_id": "p-ae05-001",
+          "beat_index": 5,
+          "quote": "A prompt is a lever, and like any lever it should be measured, versioned, and defended.",
+          "quote_token_len": 18,
+          "full_passage_text": "Study-companion summary (Ch. 5): The chapter presents prompting as the first and cheapest way to adapt a model — in-context learning, few-shot examples, and system prompts — while warning about prompt injection and advocating that prompts be versioned and evaluated like code. Paraphrased for study purposes."
+        }
+      ],
+      "supporting_layer": ["ev-prompting", "c-adaptation-ladder"],
+      "min_beat_index": 5,
+      "spoiler_gated": false
+    },
+    {
+      "id": "qa-ae-005",
+      "match_keywords": ["rag", "retrieval", "agent", "agents", "tools"],
+      "question_canonical": "What are RAG and agents, and when do you use them?",
+      "answer": "Retrieval-augmented generation (RAG) grounds a model in an external knowledge source so its answers stay current and specific — retrieval quality is what makes or breaks it. Agents go further, letting the model plan and call tools across multiple steps. Both add power but also new failure modes like bad retrieval and compounding errors.",
+      "citations": [
+        {
+          "passage_id": "p-ae06-001",
+          "beat_index": 6,
+          "quote": "RAG gives the model the right context; agents give it the ability to act — both can fail loudly.",
+          "quote_token_len": 20,
+          "full_passage_text": "Study-companion summary (Ch. 6): The chapter covers retrieval-augmented generation — grounding a model in an external knowledge source and the importance of retrieval quality — and agentic patterns where the model plans and uses tools across steps. It also discusses their trade-offs and failure modes. Summarized, not quoted."
+        }
+      ],
+      "supporting_layer": ["ev-rag-agents", "c-adaptation-ladder"],
+      "min_beat_index": 6,
+      "spoiler_gated": true
+    },
+    {
+      "id": "qa-ae-006",
+      "match_keywords": ["finetuning", "finetune", "lora", "peft", "weights"],
+      "question_canonical": "When should you finetune instead of prompting or RAG?",
+      "answer": "Finetune when prompting and retrieval have run out of room — for example when you need a consistent style, format, or behavior the model won't reliably follow from instructions alone. Parameter-efficient methods like LoRA make it far cheaper, but the book stresses weighing the gain against the data, compute, and maintenance cost.",
+      "citations": [
+        {
+          "passage_id": "p-ae07-001",
+          "beat_index": 7,
+          "quote": "Finetune when prompting and retrieval have run out of room — and count the cost first.",
+          "quote_token_len": 18,
+          "full_passage_text": "Study-companion summary (Ch. 7): The chapter explains when finetuning is the right tool versus prompting or RAG, introduces parameter-efficient finetuning techniques such as LoRA to lower cost, and stresses weighing the gains against the data and operational burden. Paraphrased in the companion's own words."
+        }
+      ],
+      "supporting_layer": ["ev-finetuning", "c-adaptation-ladder"],
+      "min_beat_index": 7,
+      "spoiler_gated": true
+    },
+    {
+      "id": "qa-ae-007",
+      "match_keywords": ["data", "dataset", "quality", "synthesis", "curation"],
+      "question_canonical": "Why does the book emphasize dataset engineering?",
+      "answer": "Because data quality often decides application quality more than model choice does. The book covers curating and quality-filtering data, deduplication, and synthesizing new data where needed — the unglamorous work that determines whether a finetune or an evaluation actually reflects what you want.",
+      "citations": [
+        {
+          "passage_id": "p-ae08-001",
+          "beat_index": 8,
+          "quote": "The dataset, not the model, is usually what makes one application better than another.",
+          "quote_token_len": 16,
+          "full_passage_text": "Study-companion summary (Ch. 8): The chapter treats dataset engineering as a core discipline — curating and quality-filtering data, deduplicating it, and synthesizing new data where needed — on the argument that data quality often decides application quality more than model choice. Summarized for study."
+        }
+      ],
+      "supporting_layer": ["ev-data", "c-data-centric"],
+      "min_beat_index": 8,
+      "spoiler_gated": true
+    },
+    {
+      "id": "qa-ae-008",
+      "match_keywords": ["inference", "latency", "cost", "quantization", "production", "feedback"],
+      "question_canonical": "How does the book handle production, inference cost, and feedback?",
+      "answer": "The closing chapters treat shipping as the beginning, not the end: optimize inference for latency, cost, and throughput with techniques like quantization and batching; assemble the full application architecture around the model; and build user-feedback loops so the system keeps improving after launch.",
+      "citations": [
+        {
+          "passage_id": "p-ae09-001",
+          "beat_index": 9,
+          "quote": "Shipping is the start: optimize inference, wire the architecture, and let user feedback keep teaching the system.",
+          "quote_token_len": 20,
+          "full_passage_text": "Study-companion summary (Ch. 9–10): The final chapters cover inference optimization — latency, cost, and throughput, with methods such as quantization and batching — the overall architecture of a foundation-model application, and building user-feedback loops that drive continuous improvement in production. Paraphrased, not quoted."
+        }
+      ],
+      "supporting_layer": ["ev-production", "c-production"],
+      "min_beat_index": 9,
+      "spoiler_gated": true
+    }
+  ],
+  "fallback": {
+    "answer": "I can only answer from this study companion's summaries of AI Engineering and from what you've read so far -- could you rephrase, or ask about a beat you've just read (foundation models, evaluation, prompting, RAG and agents, finetuning, data, or production)?",
+    "citations": []
+  }
+}

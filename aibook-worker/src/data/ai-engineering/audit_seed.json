@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "ts": "2026-09-25T12:00:00Z",
+      "request_id": "req-seed-ae-01",
+      "action": "chat",
+      "query": null,
+      "beat_index": 1,
+      "context_package": {
+        "summaries_used": [],
+        "graph_nodes_used": [],
+        "passages_retrieved": ["p-ae01-001"],
+        "snippet_tokens_sent": 20,
+        "snippet_cap": 60
+      },
+      "raw_full_text_sent": false,
+      "raw_text_bytes_available_in_vault": 0,
+      "raw_text_bytes_sent_to_model": 0,
+      "spoiler_gate": { "applied": false },
+      "context_bytes_sent_to_model": null,
+      "agent_call_status": null
+    }
+  ]
+}

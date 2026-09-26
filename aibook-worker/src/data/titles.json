@@ -1,0 +1,103 @@
+{
+  "titles": [
+    {
+      "id": "franklin",
+      "title": "The Autobiography of Benjamin Franklin",
+      "author": "Benjamin Franklin",
+      "year": 1791,
+      "cover": "/media/franklin/bible/franklin_portrait.png",
+      "locked": false,
+      "category": "literary",
+      "rights": {
+        "status": "public-domain",
+        "source": "Project Gutenberg #20203",
+        "ai_derivative_rights": ["chat", "visuals", "agents", "quiz"],
+        "vault_bytes": 386000
+      },
+      "reader_state": {
+        "beat_position": { "beat_index": 1, "label": "Beat 1" }
+      }
+    },
+    {
+      "id": "frankenstein",
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "author": "Mary Shelley",
+      "year": 1818,
+      "cover": "/media/frankenstein/bible/victor.png",
+      "locked": true,
+      "category": "literary"
+    },
+    {
+      "id": "pride-and-prejudice",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "year": 1813,
+      "cover": "/media/locked-covers/pride_and_prejudice.png",
+      "locked": true,
+      "category": "literary"
+    },
+    {
+      "id": "walden",
+      "title": "Walden",
+      "author": "Henry David Thoreau",
+      "year": 1854,
+      "cover": "/media/locked-covers/walden.png",
+      "locked": true,
+      "category": "literary"
+    },
+    {
+      "id": "the-odyssey",
+      "title": "The Odyssey",
+      "author": "Homer (trans. Samuel Butler)",
+      "year": -800,
+      "cover": "/media/locked-covers/odyssey.png",
+      "locked": true,
+      "category": "literary"
+    },
+    {
+      "id": "meditations",
+      "title": "Meditations",
+      "author": "Marcus Aurelius",
+      "year": 180,
+      "cover": "/media/locked-covers/meditations.png",
+      "locked": true,
+      "category": "literary"
+    },
+    {
+      "id": "harness",
+      "title": "The Shape of the Harness",
+      "author": "aiBook Editorial (original work)",
+      "year": 2026,
+      "cover": "/media/harness/bible/harness_cover.png",
+      "locked": false,
+      "category": "technical",
+      "rights": {
+        "status": "original-work",
+        "source": "aiBook original manuscript, first published 2026",
+        "ai_derivative_rights": ["chat", "visuals", "agents", "quiz"],
+        "vault_bytes": 42000
+      },
+      "reader_state": {
+        "beat_position": { "beat_index": 1, "label": "Beat 1" }
+      }
+    },
+    {
+      "id": "ai-engineering",
+      "title": "AI Engineering (study companion)",
+      "author": "Concepts from the book by Chip Huyen",
+      "year": 2025,
+      "cover": "/media/ai-engineering/bible/cover.png",
+      "locked": false,
+      "category": "technical",
+      "rights": {
+        "status": "study-companion",
+        "source": "Original digest summarizing concepts from 'AI Engineering: Building Applications with Foundation Models' by Chip Huyen (O'Reilly, 2025). Not affiliated with or endorsed by the author or publisher; contains no verbatim text from the book.",
+        "ai_derivative_rights": ["chat", "visuals", "agents", "quiz"],
+        "vault_bytes": 0
+      },
+      "reader_state": {
+        "beat_position": { "beat_index": 1, "label": "Beat 1" }
+      }
+    }
+  ]
+}

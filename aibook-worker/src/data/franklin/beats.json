@@ -1,0 +1,139 @@
+{
+  "beats": [
+    {
+      "index": 1,
+      "title": "Boston origins",
+      "narration": "Franklin opens his memoir as a letter to his son, tracing his family's modest Boston origins and explaining why he wants to set down the story of a life that rose from such unlikely beginnings.",
+      "citations": [
+        {
+          "passage_id": "p-b01-001",
+          "beat_index": 1,
+          "quote": "Dear Son: I have ever had pleasure in obtaining any little Anecdotes of my Ancestors.",
+          "quote_token_len": 16,
+          "full_passage_text": "Dear Son: I have ever had pleasure in obtaining any little Anecdotes of my Ancestors. You may remember the Enquiries I made among the remains of my Relations when you were with me in England, and the Journey I undertook for that purpose. Imagining it may be equally agreeable to you to know the Circumstances of my Life, many of which you are yet unacquainted with, and expecting the Enjoyment of a Week's uninterrupted Leisure in my present Country Retirement, I sit down to write them for you."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 2,
+      "title": "Apprenticeship to brother James",
+      "narration": "Apprenticed to his brother James, a printer, young Franklin devoured every book he could find and began secretly writing for James's newspaper under an assumed name, hiding his growing skill in plain sight.",
+      "citations": [
+        {
+          "passage_id": "p-b02-001",
+          "beat_index": 2,
+          "quote": "From a Child I was fond of Reading, and all the little Money that came into my Hands was ever laid out in Books.",
+          "quote_token_len": 20,
+          "full_passage_text": "From a Child I was fond of Reading, and all the little Money that came into my Hands was ever laid out in Books. Pleas'd with the Pilgrim's Progress, my first Collection was of John Bunyan's Works in separate little Volumes. I afterwards sold them to enable me to buy R. Burton's Historical Collections; they were small Chapmen's Books, and cheap, 40 or 50 in all."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 3,
+      "title": "Running away to Philadelphia",
+      "narration": "After a bitter falling-out with James, Franklin fled Boston for Philadelphia at seventeen — arriving broke and filthy from the road, and famously walking down Market Street eating one bread roll while carrying two more under his arms.",
+      "citations": [
+        {
+          "passage_id": "p-b03-001",
+          "beat_index": 3,
+          "quote": "He gave me accordingly three great Puffy Rolls . . . walk'd off with a Roll under each Arm, and eating the other.",
+          "quote_token_len": 21,
+          "full_passage_text": "I ask'd for Bisket, meaning such as we had in Boston; that Sort, it seems, was not made in Philadelphia. I then ask'd for a threepenny Loaf, and was told they had none such. So not considering or knowing the Difference of Money, I bade him give me three penny worth of any sort. He gave me accordingly three great Puffy Rolls. I was surpriz'd at the Quantity, but took it, and, having no room in my Pockets, walk'd off with a Roll under each Arm, and eating the other."
+        }
+      ],
+      "auto_visual_scene_id": "vis-b03-philadelphia"
+    },
+    {
+      "index": 4,
+      "title": "Establishing himself as a printer",
+      "narration": "Franklin built his own print shop and, wanting sharper company for self-improvement, gathered his most capable friends into a discussion club he called the Junto — a standing appointment for mutual critique and civic ambition.",
+      "citations": [
+        {
+          "passage_id": "p-b04-001",
+          "beat_index": 4,
+          "quote": "I had form'd most of my ingenious Acquaintance into a Club for mutual Improvement, which we called the Junto.",
+          "quote_token_len": 17,
+          "full_passage_text": "I should have mention'd before, that, in the Autumn of the preceding Year, I had form'd most of my ingenious Acquaintance into a Club for mutual Improvement, which we called the Junto; we met on Friday Evenings. The Rules I drew up requir'd that every Member, in his Turn, should produce one or more Queries on any Point of Morals, Politics, or Natural Philosophy, to be discuss'd by the Company."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 5,
+      "title": "Poor Richard's Almanack & the Pennsylvania Gazette",
+      "narration": "His almanack, published yearly under the pen name 'Poor Richard,' turned Franklin's proverbs about thrift and industry into some of the most quoted lines in the colonies, while his Pennsylvania Gazette made him the leading publisher in Philadelphia.",
+      "citations": [
+        {
+          "passage_id": "p-b05-001",
+          "beat_index": 5,
+          "quote": "Early to Bed, and early to rise, makes a Man healthy, wealthy, and wise.",
+          "quote_token_len": 14,
+          "full_passage_text": "In 1732 I first publish'd my Almanack, under the Name of Richard Saunders; it was continu'd by me about 25 years, and came to be in such Demand that I reap'd considerable Profit from it. I fill'd all the little Spaces that occur'd between the Remarkable Days in the Calendar with Proverbial Sentences, chiefly such as inculcated Industry and Frugality, as the Means of procuring Wealth: 'Early to Bed, and early to rise, makes a Man healthy, wealthy, and wise.'"
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 6,
+      "title": "Civic projects",
+      "narration": "Franklin turned the Junto's habit of self-improvement outward: he founded the Library Company of Philadelphia, organized the Union Fire Company, and helped launch the paving of streets, an academy that became the University of Pennsylvania, and the Pennsylvania Hospital.",
+      "citations": [
+        {
+          "passage_id": "p-b06-001",
+          "beat_index": 6,
+          "quote": "The Library . . . was the Mother of all the North American Subscription Libraries.",
+          "quote_token_len": 12,
+          "full_passage_text": "This Library afforded me the Means of Improvement by constant Study, for which I set apart an Hour or two each Day. The Library, though small, was the Mother of all the North American Subscription Libraries, now so numerous. It is a Common Benefit, and every Room in Philadelphia has since felt its Effects."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 7,
+      "title": "The Project for moral perfection",
+      "narration": "In perhaps the boldest passage of the book, Franklin describes conceiving a personal project to reach 'moral perfection' — a tracked, disciplined list of thirteen virtues he practiced one at a time, week by week, checking his own conduct in a little book.",
+      "citations": [
+        {
+          "passage_id": "p-b07-001",
+          "beat_index": 7,
+          "quote": "It was about this time I conceiv'd the bold and arduous Project of arriving at moral Perfection.",
+          "quote_token_len": 19,
+          "full_passage_text": "It was about this time I conceiv'd the bold and arduous Project of arriving at moral Perfection. I wish'd to live without committing any Fault at any time; I would conquer all that either Natural Inclination, Custom, or Company might lead me into. As I knew, or thought I knew, what was right and wrong, I did not see why I might not always do the one and avoid the other."
+        }
+      ],
+      "auto_visual_scene_id": "vis-b07-virtues"
+    },
+    {
+      "index": 8,
+      "title": "Scientific fame",
+      "narration": "Franklin's experiments with electricity spread through the scientific world and back to him in the form of real fame: correspondence with European philosophers, election to the Royal Society, and the Copley Medal for his discoveries.",
+      "citations": [
+        {
+          "passage_id": "p-b08-001",
+          "beat_index": 8,
+          "quote": "These Discoveries . . . gain'd me the Honour of being chosen a Member of the Royal Society.",
+          "quote_token_len": 18,
+          "full_passage_text": "The Publication of these Discoveries occasion'd me a good deal of Correspondence with several Learned Persons in Europe, and gain'd me the Honour of being chosen a Member of the Royal Society, and, without my having made any Application for it, a handsome Gold Medal was voted to me by that Society."
+        }
+      ],
+      "auto_visual_scene_id": "vis-b08-electricity"
+    },
+    {
+      "index": 9,
+      "title": "Reflection — where the text leaves off",
+      "narration": "The manuscript breaks off as Franklin, now a man of international reputation, is preparing to sail to England as the colonies' agent — the printer's apprentice who ran away with three rolls under his arm having become one of the most famous men of his age. Franklin never finished the story; the rest, as they say, is history.",
+      "citations": [
+        {
+          "passage_id": "p-b09-001",
+          "beat_index": 9,
+          "quote": "I was . . . on the Point of setting out for England.",
+          "quote_token_len": 8,
+          "full_passage_text": "Being the Season for Debates in the Assembly it was thought inconvenient for me to be absent at that Time from the House. I was, notwithstanding, on the Point of setting out for England, and it was thought best that my Session in the Assembly should be the last I should attend for some time."
+        }
+      ],
+      "auto_visual_scene_id": null
+    }
+  ]
+}

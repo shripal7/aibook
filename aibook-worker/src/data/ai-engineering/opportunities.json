@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-09-25",
+  "items": [
+    {
+      "title": "AI Engineer (Foundation Models)",
+      "org": "Various product companies",
+      "link": "https://www.ycombinator.com/jobs/role/ai-engineer",
+      "note": "Builds applications on top of foundation models — prompting, RAG, evaluation, and integration, exactly the workflow this book describes."
+    },
+    {
+      "title": "Applied AI / LLM Engineer",
+      "org": "OpenAI, Anthropic, and peers",
+      "link": "https://openai.com/careers",
+      "note": "Adapts frontier models into products; heavy on evaluation and inference optimization."
+    },
+    {
+      "title": "ML Platform / Inference Engineer",
+      "org": "Various AI infrastructure teams",
+      "link": "https://80000hours.org/job-board/",
+      "note": "Focuses on serving models efficiently — latency, cost, throughput, quantization — matching the book's production chapters."
+    },
+    {
+      "title": "RAG / Search Engineer",
+      "org": "Enterprise AI teams",
+      "link": "https://www.linkedin.com/jobs/search/?keywords=RAG%20engineer",
+      "note": "Builds retrieval-augmented systems and evaluation pipelines for grounded generation."
+    },
+    {
+      "title": "AI Engineering Contractor / Consultant",
+      "org": "Independent / freelance platforms",
+      "link": "https://www.upwork.com",
+      "note": "Freelance work designing prompts, evaluation suites, and finetuning datasets for companies adopting foundation models."
+    }
+  ]
+}

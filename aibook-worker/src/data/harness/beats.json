@@ -1,0 +1,146 @@
+{
+  "beats": [
+    {
+      "index": 1,
+      "title": "Why a harness exists",
+      "narration": "The manuscript opens by naming the actual problem a harness solves: a language model alone can only produce text, so every capability people call 'agentic' -- reading a file, running a command, remembering yesterday's decision -- has to be built around it by something else, the harness.",
+      "citations": [
+        {
+          "passage_id": "p-hb01-001",
+          "beat_index": 1,
+          "quote": "A model is a mind with no hands until something gives it hands.",
+          "quote_token_len": 13,
+          "full_passage_text": "People ask what makes an assistant an agent, as if the model gained some new instinct. It didn't. What changed is everything wrapped around it: a loop that hands it a task, a shell it can run commands in, a way to remember what happened five minutes or five days ago. A model is a mind with no hands until something gives it hands. The harness is the hands, and everything that follows is really the story of how those hands got built, one clumsy attempt at a time."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 2,
+      "title": "The tool-use loop",
+      "narration": "Strip away the marketing and an agent turns out to be a loop: show the model the situation, let it decide whether to act, run whatever it asks for, and hand back what happened, repeating until it says it's done -- unglamorous, and also the entire trick.",
+      "citations": [
+        {
+          "passage_id": "p-hb02-001",
+          "beat_index": 2,
+          "quote": "Every real capability the model has is a tool it was handed, described in words, and trusted to ask for by name.",
+          "quote_token_len": 22,
+          "full_passage_text": "Strip away the marketing and an agent is a loop: show the model the situation, let it decide whether to act, run whatever it asks for, and hand back what happened. Repeat until it says it's done. Every real capability the model has -- reading a file, searching the web, editing a line of code -- is a tool it was handed, described in words, and trusted to ask for by name. The loop is unglamorous. It is also the entire trick."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 3,
+      "title": "Context is finite",
+      "narration": "The first hard lesson was that nothing stays in view forever: long sessions had to learn to summarize what came before, compress it, and move the rest into a drawer the model could reopen on request rather than deleting it -- memory meant building drawers, not a bigger desk.",
+      "citations": [
+        {
+          "passage_id": "p-hb03-001",
+          "beat_index": 3,
+          "quote": "A context window is not a memory; it is a desk, and desks get cluttered.",
+          "quote_token_len": 16,
+          "full_passage_text": "The first hard lesson was that nothing stays in view forever. A context window is not a memory; it is a desk, and desks get cluttered. Long sessions had to learn to summarize what came before, compress it, and set the rest aside -- not deleted, just moved off the desk into a drawer the model could reopen on request. Memory, it turned out, meant building drawers, not building a bigger desk."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 4,
+      "title": "Skills -- expertise loaded on demand",
+      "narration": "Not every task deserves to live in the model's default instincts, so rare or team-specific expertise got packaged separately -- a short file of instructions the harness could load only when the situation called for it, sharpening the model by teaching it when to go look something up rather than by knowing more.",
+      "citations": [
+        {
+          "passage_id": "p-hb04-001",
+          "beat_index": 4,
+          "quote": "A skill is expertise the model didn't have to be trained on -- it just had to be told where to look.",
+          "quote_token_len": 21,
+          "full_passage_text": "Not every task deserves to live in the model's default instincts. Some are rare, some are specific to one team's way of doing things, some are simply too detailed to keep loaded at all times. The answer was to package that expertise separately -- a short file of instructions the harness could load only when the situation called for it. A skill is expertise the model didn't have to be trained on -- it just had to be told where to look. The model got sharper not by knowing more, but by knowing when to go look something up."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 5,
+      "title": "Subagents and forks",
+      "narration": "Some tasks flood the desk before they're even half done, so the harness learned to spin off a separate worker with its own clean desk -- a subagent sent to fetch an answer and nothing else, so the conversation that mattered could stay uncluttered.",
+      "citations": [
+        {
+          "passage_id": "p-hb05-001",
+          "beat_index": 5,
+          "quote": "Delegation meant giving a piece of the problem to a version of yourself that would not remember trying.",
+          "quote_token_len": 18,
+          "full_passage_text": "Some tasks flood the desk before they're even half done -- a wide search, a long exploration, a question whose answer takes ten thousand words to find and one sentence to report. For those, the harness learned to spin off a separate worker: a subagent, with its own clean desk, sent to fetch an answer and nothing else. Delegation meant giving a piece of the problem to a version of yourself that would not remember trying, so the version that mattered could stay uncluttered."
+        }
+      ],
+      "auto_visual_scene_id": "vis-hb05-subagents"
+    },
+    {
+      "index": 6,
+      "title": "MCP -- connecting to the world outside the sandbox",
+      "narration": "A harness that can only touch its own filesystem is safe and mostly useless, so a shared protocol emerged that let any external service describe its own tools and hand them to whichever harness asked, without every harness needing custom code for every service.",
+      "citations": [
+        {
+          "passage_id": "p-hb06-001",
+          "beat_index": 6,
+          "quote": "The sandbox was safe precisely because nothing outside it existed to the model -- until a protocol agreed to open a door.",
+          "quote_token_len": 21,
+          "full_passage_text": "A harness that can only touch its own filesystem is safe and mostly useless. The world the model needed to act on -- tickets, chat channels, databases, other companies' APIs -- lived outside the sandbox entirely. The sandbox was safe precisely because nothing outside it existed to the model -- until a protocol agreed to open a door: a common way for any external service to describe its own tools and hand them to whichever harness asked, without every harness needing custom code for every service."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 7,
+      "title": "Permissions and safety rails",
+      "narration": "Trust arrived slowly and only where it was cheap to be wrong -- the real question was never whether the model would eventually try something destructive, but how far that single mistake would reach, so permissions stopped being a single switch and became a map of blast radius.",
+      "citations": [
+        {
+          "passage_id": "p-hb07-001",
+          "beat_index": 7,
+          "quote": "The question was never whether the model would eventually try something destructive; it was how far that single mistake would reach.",
+          "quote_token_len": 22,
+          "full_passage_text": "Trust arrived slowly, and only where it was cheap to be wrong. Reading a file, safe. Editing a file, mostly safe if it can be undone. Force-pushing to a shared branch, a different category of risk entirely. The question was never whether the model would eventually try something destructive; it was how far that single mistake would reach. So permissions stopped being a single on/off switch and became a map of blast radius -- reversible actions allowed freely, irreversible ones stopped at a gate."
+        }
+      ],
+      "auto_visual_scene_id": null
+    },
+    {
+      "index": 8,
+      "title": "Hooks, background tasks, and scheduling",
+      "narration": "For a long while every run needed a person watching it start and finish; that stopped being true once the harness learned to fire on events without being asked, keep working in the background while a person moved on, and wake itself up again later on a schedule.",
+      "citations": [
+        {
+          "passage_id": "p-hb08-001",
+          "beat_index": 8,
+          "quote": "The most useful version of the harness was the one still working after everyone had stopped watching it.",
+          "quote_token_len": 19,
+          "full_passage_text": "For a long while, every run needed a person sitting at the keyboard to start it and see it through. That stopped being true once the harness learned three tricks: a hook that fires on an event without being asked, a task that keeps running in the background while the person moves on to something else, and a schedule that wakes the whole thing up again later without anyone remembering to. The most useful version of the harness was the one still working after everyone had stopped watching it."
+        }
+      ],
+      "auto_visual_scene_id": "vis-hb08-automation"
+    },
+    {
+      "index": 9,
+      "title": "Designing agents and prompts well",
+      "narration": "Once these pieces existed, the real craft shifted from building the harness to using it well -- naming a tool clearly enough that the model reached for it correctly, writing instructions specific enough to remove ambiguity but general enough to survive tomorrow's slightly different request. And alongside design came the quieter discipline of knowing whether any of it worked: without a way to check the agent's output against what was actually wanted, every change was a guess dressed up as progress. The account ends here, mid-project, the way most true accounts of building something do.",
+      "citations": [
+        {
+          "passage_id": "p-hb09-001",
+          "beat_index": 9,
+          "quote": "The best prompt was never the longest one; it was the one that left the least room for the model to guess wrong.",
+          "quote_token_len": 23,
+          "full_passage_text": "After enough of these pieces existed, the real craft shifted from building the harness to using it well: naming a tool clearly enough that the model reached for it correctly, writing instructions specific enough to remove ambiguity but general enough to survive a slightly different request tomorrow. The best prompt was never the longest one; it was the one that left the least room for the model to guess wrong. That is where this account ends, mid-project, the way most true accounts of building something do -- with the harness good enough to be useful, and still, always, one clumsy attempt short of finished."
+        },
+        {
+          "passage_id": "p-hb09-002",
+          "beat_index": 9,
+          "quote": "An agent you cannot evaluate is an agent you can only hope about.",
+          "quote_token_len": 14,
+          "full_passage_text": "The last thing the harness had to learn was how to be judged. A tool call either ran or it didn't, but an agent's real output -- a plan, an answer, a change to a file -- was open-ended, and open-ended things resist a simple pass-or-fail. So the craft grew a second half: writing down what a good result actually looked like, checking the agent against cases you'd seen fail before, and treating every prompt or tool change as a hypothesis to be tested rather than trusted. An agent you cannot evaluate is an agent you can only hope about, and hope does not survive contact with production."
+        }
+      ],
+      "auto_visual_scene_id": null
+    }
+  ]
+}

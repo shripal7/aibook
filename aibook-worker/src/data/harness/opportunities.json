@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-09-01",
+  "items": [
+    {
+      "title": "AI Agent/Harness Engineer",
+      "org": "Anthropic",
+      "link": "https://www.anthropic.com/careers",
+      "note": "Builds the tool-use loop, context management, and safety rails agent harnesses depend on."
+    },
+    {
+      "title": "Applied AI Engineer, Agents",
+      "org": "OpenAI",
+      "link": "https://openai.com/careers",
+      "note": "Designs agentic workflows and tool integrations on top of frontier models."
+    },
+    {
+      "title": "MCP Server / Developer Platform Engineer",
+      "org": "Various (search \"MCP server engineer\")",
+      "link": "https://github.com/modelcontextprotocol",
+      "note": "Builds MCP servers that expose external services as agent tools."
+    },
+    {
+      "title": "Prompt / Agent Design Contractor",
+      "org": "Independent / freelance platforms",
+      "link": "https://www.upwork.com",
+      "note": "Freelance work designing agent prompts, skills, and evaluation suites for companies adopting harnesses."
+    },
+    {
+      "title": "AI Safety / Permissions Engineer",
+      "org": "Various AI labs",
+      "link": "https://80000hours.org/job-board/",
+      "note": "Focuses on blast-radius permission models and sandboxing for autonomous agents."
+    }
+  ]
+}

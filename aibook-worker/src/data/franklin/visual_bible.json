@@ -1,0 +1,20 @@
+{
+  "title_id": "franklin",
+  "style": {
+    "medium": "18th-century engraving and oil portraiture, warm parchment tones",
+    "palette": ["#2b1d0e", "#7a5230", "#d8c9a3", "#43230f"],
+    "palette_swatch": "/media/franklin/bible/palette.png"
+  },
+  "characters": [
+    {
+      "id": "bible-franklin",
+      "name": "Benjamin Franklin",
+      "reference_image": "/media/franklin/bible/franklin_portrait.png",
+      "descriptors": ["balding with long grey hair", "spectacles", "plain brown coat", "calm, self-possessed expression"]
+    }
+  ],
+  "settings": [
+    { "id": "bible-print-shop", "name": "Philadelphia print shop", "reference_image": "/media/franklin/scenes/print_shop.png" },
+    { "id": "bible-philadelphia-street", "name": "Colonial Philadelphia street", "reference_image": "/media/franklin/scenes/philadelphia_street.png" }
+  ]
+}

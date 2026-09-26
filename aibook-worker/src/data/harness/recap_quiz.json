@@ -1,0 +1,48 @@
+{
+  "questions": [
+    {
+      "id": "hq1",
+      "type": "mcq",
+      "prompt": "According to the book, what is a context window best compared to?",
+      "choices": ["A filing cabinet", "A desk that gets cluttered", "An empty room", "A library"],
+      "answer_index": 1,
+      "rationale": "\"A context window is not a memory; it is a desk, and desks get cluttered.\"",
+      "citation": { "passage_id": "p-hb03-001", "beat_index": 3 }
+    },
+    {
+      "id": "hq2",
+      "type": "mcq",
+      "prompt": "What does the book call packaged, on-demand expertise the model can load?",
+      "choices": ["A plugin", "A skill", "A macro", "An extension"],
+      "answer_index": 1,
+      "rationale": "\"A skill is expertise the model didn't have to be trained on -- it just had to be told where to look.\"",
+      "citation": { "passage_id": "p-hb04-001", "beat_index": 4 }
+    },
+    {
+      "id": "hq3",
+      "type": "short",
+      "prompt": "In one sentence, why does the harness delegate work to subagents?",
+      "model_answer": "To hand off wide exploration to a separate clean-context worker so the main conversation doesn't get cluttered.",
+      "rationale": "\"Delegation meant giving a piece of the problem to a version of yourself that would not remember trying.\"",
+      "citation": { "passage_id": "p-hb05-001", "beat_index": 5 }
+    },
+    {
+      "id": "hq4",
+      "type": "mcq",
+      "prompt": "How does the book describe the shift in how permissions are designed?",
+      "choices": ["From a map to a single switch", "From a single switch to a blast-radius map", "From optional to mandatory", "From per-user to per-team"],
+      "answer_index": 1,
+      "rationale": "\"Permissions stopped being a single on/off switch and became a map of blast radius.\"",
+      "citation": { "passage_id": "p-hb07-001", "beat_index": 7 }
+    },
+    {
+      "id": "hq5",
+      "type": "mcq",
+      "prompt": "What lets the harness keep working after a person stops watching it?",
+      "choices": ["Faster hardware", "Hooks, background tasks, and scheduling", "A bigger context window", "More training data"],
+      "answer_index": 1,
+      "rationale": "\"The most useful version of the harness was the one still working after everyone had stopped watching it.\"",
+      "citation": { "passage_id": "p-hb08-001", "beat_index": 8 }
+    }
+  ]
+}
