@@ -7,6 +7,7 @@ import { cors } from "hono/cors";
 import { getBook, getMedia, getTitle, getTitles } from "./store";
 import { answerChat, auditProof, visualizePassage } from "./rpg";
 import { agentStatus, sendAgentMessage } from "./agents";
+import { readStats, track } from "./analytics";
 import type { Env } from "./types";
 
 const app = new Hono<{ Bindings: Env }>();
@@ -54,8 +55,10 @@ app.get("/api/titles/:id/personas", async (c) => {
 
 // ---- Beats ----
 app.get("/api/titles/:id/beats", async (c) => {
-  const book = await getBook(c.env, c.req.param("id"));
+  const id = c.req.param("id");
+  const book = await getBook(c.env, id);
   if (!book) return c.json(notFound, 404);
+  track(c, "open", id); // opening a book fetches its beats
   return c.json(book.beats);
 });
 
@@ -72,6 +75,7 @@ app.put("/api/titles/:id/beat-position", async (c) => {
   if (typeof beatIndex !== "number" || !Number.isInteger(beatIndex)) {
     return c.json({ error: "beat_index (int) is required" }, 400);
   }
+  track(c, "beat", c.req.param("id"), beatIndex); // which page/beat is being read
   return c.json({ beat_index: beatIndex, label: `Beat ${beatIndex}` });
 });
 
@@ -84,6 +88,7 @@ app.post("/api/titles/:id/chat", async (c) => {
   const query = String((body as { query?: unknown }).query ?? "");
   const beatIndex = (body as { beat_index?: unknown }).beat_index;
   const beat = typeof beatIndex === "number" ? beatIndex : defaultBeat(await getTitle(c.env, id));
+  track(c, "chat", id, beat);
   return c.json(answerChat(book, query, beat));
 });
 
@@ -98,6 +103,7 @@ app.post("/api/titles/:id/visualize", async (c) => {
     beat_index?: number;
   };
   const beat = typeof body.beat_index === "number" ? body.beat_index : defaultBeat(await getTitle(c.env, id));
+  track(c, "visualize", id, beat);
   return c.json(visualizePassage(book, beat, body.passage_id ?? null, body.target_beat ?? null));
 });
 
@@ -109,8 +115,10 @@ app.get("/api/titles/:id/visual-bible", async (c) => {
 
 // ---- Recap quiz ----
 app.get("/api/titles/:id/recap-quiz", async (c) => {
-  const book = await getBook(c.env, c.req.param("id"));
+  const id = c.req.param("id");
+  const book = await getBook(c.env, id);
   if (!book) return c.json(notFound, 404);
+  track(c, "quiz", id);
   const questions = book.recap_quiz.questions.map((q) => ({
     id: q.id,
     type: q.type,
@@ -176,10 +184,14 @@ app.post("/api/titles/:id/agents/:agentType/message", async (c) => {
   const body = (await c.req.json().catch(() => ({}))) as { message?: string; beat_index?: number };
   const beat = typeof body.beat_index === "number" ? body.beat_index : defaultBeat(await getTitle(c.env, id));
   const result = await sendAgentMessage(c.env, book, c.req.param("agentType"), beat, String(body.message ?? ""));
+  if (result) track(c, "agent", id, beat);
   return result ? c.json(result) : c.json(notFound, 404);
 });
 
 app.get("/api/agents/status", (c) => c.json(agentStatus(c.env)));
+
+// ---- Reading analytics (aggregate; anonymous) ----
+app.get("/api/stats", async (c) => c.json(await readStats(c.env)));
 
 // ---- Media (served from KV) ----
 const CONTENT_TYPES: Record<string, string> = {

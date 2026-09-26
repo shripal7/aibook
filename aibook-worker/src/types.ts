@@ -179,4 +179,5 @@ export interface AuditEntry {
 export interface Env {
   CONTENT: KVNamespace;
   AI: Ai;
+  AE?: AnalyticsEngineDataset;
 }

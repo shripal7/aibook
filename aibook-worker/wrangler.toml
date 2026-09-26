@@ -13,3 +13,11 @@ id = "1483a459d87f4a93943ce02c9d7e4809"
 # Workers AI powers the live agent personas (with a canned fallback in agents.ts).
 [ai]
 binding = "AI"
+
+# Reading analytics via KV counters is always on (GET /api/stats). For the richer, precise,
+# queryable layer (per-event geo/visitor via Analytics Engine SQL), enable Analytics Engine in
+# the Cloudflare dashboard, then uncomment the binding below and redeploy — the code already
+# guards on env.AE, so no code change is needed.
+# [[analytics_engine_datasets]]
+# binding = "AE"
+# dataset = "aibook_events"

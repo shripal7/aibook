@@ -9,6 +9,23 @@ Agent personas run on **Workers AI** with a canned fallback.
 `src/data/` and `public/media/` are the human-editable source of truth; `scripts/upload-content.py`
 pushes them into KV. Deploy the Worker only when you change its **code**.
 
+## Reading analytics
+
+The Worker records which books and which beats (pages) are read, plus coarse, anonymous
+request signals — there is no login, so "who" means IP-derived geo + device, never raw IP/PII.
+
+- **`GET /api/stats`** — instant JSON summary from KV counters: per book, the `open`/`chat`/
+  `visualize`/`agent`/`quiz` counts, per-beat (page) view counts, and `countries` / `regions` /
+  `devices` breakdowns. (KV counters are *approximate* under heavy concurrency.)
+- **Analytics Engine (optional, precise + queryable):** each event is also written to a Workers
+  Analytics Engine dataset with richer signals — country, region, city, continent, timezone,
+  ISP/ASN, Cloudflare colo, browser language, device class, and a **daily-rotating visitor hash**
+  for rough unique counts. It's off until you enable Analytics Engine in the Cloudflare dashboard
+  and uncomment the `[[analytics_engine_datasets]]` binding in `wrangler.toml` (the code already
+  guards on `env.AE`). Then query it in the dashboard or via the Analytics Engine SQL API.
+
+`GET /api/stats` is currently public (aggregate only). Ask if you want it gated behind a secret.
+
 ## Endpoints (identical to the Flask contract)
 
 `GET /api/health`, `GET /api/titles`, `GET /api/titles/:id`, `GET /:id/personas`,
