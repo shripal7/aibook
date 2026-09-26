@@ -42,6 +42,10 @@ Captured live from the Android app running against the deployed Worker.
   </tr>
 </table>
 
+**▶ Full walkthrough video:** [`docs/aiBook-personas.mp4`](docs/aiBook-personas.mp4) — reading
+feed, visualize, and all four live agent personas (historian, debate-the-author, translate to
+Spanish & Hindi, and quiz coach). Also on the [v1.0 release](https://github.com/shripal7/aibook/releases/tag/v1.0).
+
 This repo has two parts:
 
 ## `aibook-worker/` — API backend (Cloudflare Worker)
