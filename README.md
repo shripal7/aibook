@@ -7,6 +7,41 @@ auto-advancing **beats feed** with citations, on-demand **visuals**, spoiler-gat
 **Rights-Preserving Grounding (RPG)** audit that proves no raw book text is ever sent to
 the model.
 
+## Screenshots
+
+Captured live from the Android app running against the deployed Worker.
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="docs/screenshots/01-library.png" width="240"><br>
+      <sub><b>Library</b> — pick a book</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="docs/screenshots/02-reading-feed.png" width="240"><br>
+      <sub><b>Beats feed</b> — narrated, with citations</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="docs/screenshots/03-visual-bible.png" width="240"><br>
+      <sub><b>Visualize</b> — scenes on the Visual Bible</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%">
+      <img src="docs/screenshots/04-historian-agent.png" width="240"><br>
+      <sub><b>Historian</b> — live agent persona</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="docs/screenshots/05-debate-author.png" width="240"><br>
+      <sub><b>Debate the author</b> — in Franklin's voice</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="docs/screenshots/06-translate-hindi.png" width="240"><br>
+      <sub><b>Translate</b> — any beat, any language</sub>
+    </td>
+  </tr>
+</table>
+
 This repo has two parts:
 
 ## `aibook-worker/` — API backend (Cloudflare Worker)
